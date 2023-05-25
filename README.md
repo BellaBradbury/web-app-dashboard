@@ -17,3 +17,11 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 
 -CHART LIBRARY-
 * https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.js
+
+-TO DO-
+* SVG `alt=""` accessibility
+* IMG `alt=""` accessibility
+* FORM `id` & `name`
+* BUTTON `type`
+
+-OPEN TAGS-

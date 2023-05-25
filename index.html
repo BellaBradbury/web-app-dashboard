@@ -9,8 +9,452 @@
     </head>
 
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header>
+            <h1>WebApp&trade;</h1>
+            <img src="svgs/bell.svg" alt="SVG">
+            <!-- GREEN NOTIFICATION DOT -->
+            <img src="images/member-1.jpg" alt="Member Profile Picture">
+            <p>Student Name</p>
+        </header>
+        <main>
+            <nav>
+                <img src="svgs/home.svg" alt="SVG">
+                <img src="svgs/bar-chart.svg" alt="SVG">
+                <img src="svgs/members.svg" alt="SVG">
+                <img src="svgs/settings.svg" alt="SVG">
+            </nav>
+
+            <div id="dashboard">
+                <h2>Dashboard</h2>
+
+                <section id="alerts">
+                    <p><strong>Alert:</strong> You have unread messages</p>
+                    <button>X</button>
+                </section>
+
+                <section id="traffic-overview">
+                    <h3>TRAFFIC</h3>
+                    <div>
+                        <button>Hourly</button>
+                        <button>Daily</button>
+                        <button>Weekly</button>
+                        <button>Monthly</button>
+                    </div>
+                    <!-- CHART -->
+                </section>
+                    
+                <section id="traffic-daily">
+                    <h3>DAILY TRAFFIC</h3>
+                    <!-- CHART -->
+                </section>
+
+                <section id="user-mobile">
+                    <h3>MOBILE USERS</h3>
+                    <!-- CHART -->
+                </section>
+
+                <section id="social-stats">
+                    <h3>SOCIAL STATS</h3>
+                    <div>
+                        <div>
+                            <img src="svgs/facebook.svg" alt="SVG">
+                            <h4>Facebook</h4>
+                            <p>10,320</p>
+                        </div>
+                        <div>
+                            <img src="svgs/instagram.svg" alt="SVG">
+                            <h4>Instagram</h4>
+                            <p>16,445</p>
+                        </div>
+                        <div>
+                            <img src="svgs/twitter.svg" alt="SVG">
+                            <h4>Twitter</h4>
+                            <p>22,189</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="user-new">
+                    <h3>NEW MEMBERS</h3>
+                    <div>
+                        <div>
+                            <img src="images/member-1.jpg" alt="Member Profile Picture">
+                            <h4>Victoria Chambers</h4>
+                            <p>victoria.chambers80@example.com</p>
+                            <p>10/15/20</p>
+                        </div>
+                        <div>
+                            <img src="images/member-2.jpg" alt="Member Profile Picture">
+                            <h4>Dale Byrd</h4>
+                            <p>dale.byrd52@example.com</p>
+                            <p>10/15/20</p>
+                        </div>
+                        <div>
+                            <img src="images/member-3.jpg" alt="Member Profile Picture">
+                            <h4>Dawn Wood</h4>
+                            <p>dawn.wood16@example.com</p>
+                            <p>10/15/20</p>
+                        </div>
+                        <div>
+                            <img src="images/member-4.jpg" alt="Member Profile Picture">
+                            <h4>Dan Oliver</h4>
+                            <p>dan.oliver82@example.com</p>
+                            <p>10/15/20</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="activity">
+                    <h3>RECENT ACTIVITY</h3>
+                    <div>
+                        <div>
+                            <img src="images/member-1.jpg" alt="Member Profile Picture">
+                            <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
+                            <p>4 hours ago</p>
+                        </div>
+                        <div>
+                            <img src="images/member-2.jpg" alt="Member Profile Picture">
+                            <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
+                            <p>5 hours ago</p>
+                        </div>
+                        <div>
+                            <img src="images/member-3.jpg" alt="Member Profile Picture">
+                            <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
+                            <p>5 hours ago</p>
+                        </div>
+                        <div>
+                            <img src="images/member-4.jpg" alt="Member Profile Picture">
+                            <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
+                            <p>1 day ago</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="user-message">
+                    <h3>MESSAGE USER</h3>
+                    <div>
+                        <input type="text" placeholder="Search for User">
+                        <textarea cols="30" rows="10" placeholder="Message for User"></textarea>
+                        <button>SEND</button>
+                    </div>
+                </section>
+
+                <section id="settings">
+                    <h3>SETTINGS</h3>
+                    <div>
+                        <label for="email-notifications">Send Email Notifications</label>
+                        <button id="email-notifications">ON/OFF</button>
+
+                        <label for="public-profile">Set Profile to Public</label>
+                        <button id="public-profile">ON/OFF</button>
+
+                        <select name="timezone">
+                            <option value="placeholder">Select Timezone</option>
+                            <optgroup label="AFRICA">
+                                <option value="CAT">Central Africa Time <small>(UTC +2)</small></option>
+                                <option value="CET">Central European Time <small>(UTC +1)</small></option>
+                                <option value="CVT">Cape Verde Time <small>(UTC -1)</small></option>
+                                <option value="EAT">Eastern Africa Time <small>(UTC +3)</small></option>
+                                <option value="EET">Eastern European Time <small>(UTC +2)</small></option>
+                                <option value="GMT">Greenwich Mean Time <small>(UTC +0)</small></option>
+                                <option value="MUT">Mauritius Time <small>(UTC +4)</small></option>
+                                <option value="RET">Reunion Time <small>(UTC +4)</small></option>
+                                <option value="SAST">South Africa Standard Time <small>(UTC +2)</small></option>
+                                <option value="SCT">Seychelles Time <small>(UTC +4)</small></option>
+                                <option value="WAST">West Africa Summer Time <small>(UTC +2)</small></option>
+                                <option value="WAT">West Africa Time <small>(UTC +1)</small></option>
+                                <option value="WEST">Western European Summer Time <small>(UTC +1)</small></option>
+                                <option value="WET">Western European Time <small>(UTC +0)</small></option>
+                                <option value="WST">Western Sahara Summer Time <small>(UTC +1)</small></option>
+                                <option value="WT">Western Sahara Standard Time <small>(UTC +0)</small></option>
+                            </optgroup>
+                            <optgroup label="ANTARCTICA">
+                                <option value="ART">Argentina Time <small>(UTC -3)</small></option>
+                                <option value="CAST">Casey Time <small>(UTC +8)</small></option>
+                                <option value="CEST">Central European Summer Time <small>(UTC +2)</small></option>
+                                <option value="CLST">Chile Summer Time <small>(UTC -3)</small></option>
+                                <option value="CLT">Chile Standard Time <small>(UTC -4)</small></option>
+                                <option value="DAVT">Davis Time <small>(UTC +7)</small></option>
+                                <option value="DDUT">Dumont-d'Urville Time <small>(UTC +10)</small></option>
+                                <option value="GMT">Greenwich Mean Time <small>(UTC +0)</small></option>
+                                <option value="MAWT">Mawson Time <small>(UTC +5)</small></option>
+                                <option value="NZDT">New Zealand Daylight Time <small>(UTC +13)</small></option>
+                                <option value="NZST">New Zealand Standard Time <small>(UTC +12)</small></option>
+                                <option value="ROTT">Rothera Time <small>(UTC -3)</small></option>
+                                <option value="SYOT">Syowa Time <small>(UTC +3)</small></option>
+                                <option value="VOST">Vostok Time <small>(UTC +6)</small></option>
+                            </optgroup>
+                            <optgroup label="ASIA">
+                                <option value="ADT">Arabia Daylight Time <small>(UTC +4)</small></option>
+                                <option value="AFT">Afghanistan Time <small>(UTC +4:30)</small></option>
+                                <option value="ALMT">Alma-Ata Time <small>(UTC +6)</small></option>
+                                <option value="AMST">Armenia Summer Time <small>(UTC +5)</small></option>
+                                <option value="AMT">Armenia Time <small>(UTC +4)</small></option>
+                                <option value="ANAST">Anadyr Summer Time <small>(UTC +12)</small></option>
+                                <option value="ANAT">Anadyr Time <small>(UTC +12)</small></option>
+                                <option value="AQTT">Aqtobe Time <small>(UTC +5)</small></option>
+                                <option value="AST">Arabia Standard Time <small>(UTC +3)</small></option>
+                                <option value="AZST">Azerbaijan Summer Time <small>(UTC +5)</small></option>
+                                <option value="AZT">Azerbaijan Time <small>(UTC +4)</small></option>
+                                <option value="BNT">Brunei Darussalam Time <small>(UTC +8)</small></option>
+                                <option value="BST">Bangladesh Standard Time <small>(UTC +6)</small></option>
+                                <option value="BTT">Bhutan Time <small>(UTC +6)</small></option>
+                                <option value="CHOST">Choibalsan Summer Time <small>(UTC +9)</small></option>
+                                <option value="CHOT">Choibalsan Time <small>(UTC +8)</small></option>
+                                <option value="CST">China Standard Time <small>(UTC +8)</small></option>
+                                <option value="EEST">Eastern European Summer Time <small>(UTC +3)</small></option>
+                                <option value="EET">Eastern European Time <small>(UTC +2)</small></option>
+                                <option value="GET">Georgia Standard Time <small>(UTC +4)</small></option>
+                                <option value="GST">Gulf Standard Time <small>(UTC +4)</small></option>
+                                <option value="HKT">Hong Kong Time <small>(UTC +8)</small></option>
+                                <option value="HOVST">Hovd Summer Time <small>(UTC +8)</small></option>
+                                <option value="HOVT">Hovd Time <small>(UTC +7)</small></option>
+                                <option value="ICT">Indochina Time <small>(UTC +7)</small></option>
+                                <option value="IDT">Israel Daylight Time <small>(UTC +3)</small></option>
+                                <option value="IRDT">Iran Daylight Time <small>(UTC +4:30)</small></option>
+                                <option value="IRKST">Irkutsk Summer Time <small>(UTC +9)</small></option>
+                                <option value="IRKT">Irkutsk Time <small>(UTC +8)</small></option>
+                                <option value="IRST">Iran Standard Time <small>(UTC +3:30)</small></option>
+                                <option value="IST">Israel Standard Time <small>(UTC +2)</small></option>
+                                <option value="IST">India Standard Time <small>(UTC +5:30)</small></option>
+                                <option value="JST">Japan Standard Time <small>(UTC +9)</small></option>
+                                <option value="KGT">Kyrgyzstan Time <small>(UTC +6)</small></option>
+                                <option value="KRAST">Krasnoyarsk Summer Time <small>(UTC +8)</small></option>
+                                <option value="KRAT">Krasnoyarsk Time <small>(UTC +7)</small></option>
+                                <option value="KST">Korea Standard Time <small>(UTC +9)</small></option>
+                                <option value="MAGST">Magadan Summer Time <small>(UTC +12)</small></option>
+                                <option value="MAGT">Magadan Time <small>(UTC +11)</small></option>
+                                <option value="MMT">Myanmar Time <small>(UTC +6:30)</small></option>
+                                <option value="MSK">Moscow Standard Time <small>(UTC +3)</small></option>
+                                <option value="MVT">Maldives Time <small>(UTC +5)</small></option>
+                                <option value="MYT">Malaysia Time <small>(UTC +8)</small></option>
+                                <option value="NOVST">Novosibirsk Summer Time <small>(UTC +7)</small></option>
+                                <option value="NOVT">Novosibirsk Time <small>(UTC +7)</small></option>
+                                <option value="NPT">Nepal Time <small>(UTC +5:45)</small></option>
+                                <option value="OMSST">Omsk Summer Time <small>(UTC +7)</small></option>
+                                <option value="OMST">Omsk Standard Time <small>(UTC +6)</small></option>
+                                <option value="ORAT">Oral Time <small>(UTC +5)</small></option>
+                                <option value="PETST">Kamchatka Summer Time <small>(UTC +12)</small></option>
+                                <option value="PETT">Kamchatka Time <small>(UTC +12)</small></option>
+                                <option value="PHT">Philippine Time <small>(UTC +8)</small></option>
+                                <option value="PKT">Pakistan Standard Time <small>(UTC +5)</small></option>
+                                <option value="PYT">Pyongyang Time <small>(UTC +8:30)</small></option>
+                                <option value="QYZT">Qyzylorda Time <small>(UTC +6)</small></option>
+                                <option value="SAKT">Sakhalin Time <small>(UTC +11)</small></option>
+                                <option value="SGT">Singapore Time <small>(UTC +8)</small></option>
+                                <option value="SRET">Srednekolymsk Time <small>(UTC +11)</small></option>
+                                <option value="TJT">Tajikistan Time <small>(UTC +5)</small></option>
+                                <option value="TLT">East Timor Time <small>(UTC +9)</small></option>
+                                <option value="TMT">Turkmenistan Time <small>(UTC +5)</small></option>
+                                <option value="TRT">Turkey Time <small>(UTC +3)</small></option>
+                                <option value="ULAST">Ulaanbaatar Summer Time <small>(UTC +9)</small></option>
+                                <option value="ULAT">Ulaanbaatar Time <small>(UTC +8)</small></option>
+                                <option value="UZT">Uzbekistan Time <small>(UTC +5)</small></option>
+                                <option value="VLAST">Vladivostok Summer Time <small>(UTC +11)</small></option>
+                                <option value="VLAT">Vladivostok Time <small>(UTC +10)</small></option>
+                                <option value="WIB">Western Indonesian Time <small>(UTC +7)</small></option>
+                                <option value="WIT">Eastern Indonesian Time <small>(UTC +9)</small></option>
+                                <option value="WITA">Central Indonesian Time <small>(UTC +8)</small></option>
+                                <option value="YAKST">Yakutsk Summer Time <small>(UTC +10)</small></option>
+                                <option value="YAKT">Yakutsk Time <small>(UTC +9)</small></option>
+                                <option value="YEKST">Yekaterinburg Summer Time <small>(UTC +6)</small></option>
+                                <option value="YEKT">Yekaterinburg Time <small>(UTC +5)</small></option>
+                            </optgroup>
+                            <optgroup label="ATLANTIC">
+                                <option value="ADT">Atlantic Daylight Time <small>(UTC -3)</small></option>
+                                <option value="AST">Atlantic Standard Time <small>(UTC -4)</small></option>
+                                <option value="AT">Atlantic Time <small>(UTC -4:00/3:00)</small></option>
+                                <option value="AZOST">Azores Summer Time <small>(UTC +0)</small></option>
+                                <option value="AZOT">Azores Time <small>(UTC -1)</small></option>
+                            </optgroup>
+                            <optgroup label="AUSTRALIA">
+                                <option value="ACDT">Australian Central Daylight Time <small>(UTC +10:30)</small></option>
+                                <option value="ACST">Australian Central Standard Time <small>(UTC +9:30)</small></option>
+                                <option value="ACT">Australian Central Time <small>(UTC +9:30/+10:30)</small></option>
+                                <option value="ACWST">Australian Central Western Standard Time <small>(UTC +8:45)</small></option>
+                                <option value="AEDT">Australian Eastern Daylight Time <small>(UTC +11)</small></option>
+                                <option value="AEST">Australian Eastern Standard Time <small>(UTC +10)</small></option>
+                                <option value="AET">Australian Eastern Time <small>(UTC +10:00/+11:00)</small></option>
+                                <option value="AWDT">Australian Western Daylight Time <small>(UTC +9)</small></option>
+                                <option value="AWST">Australian Western Standard Time <small>(UTC +8)</small></option>
+                                <option value="CXT">Christmas Island Time <small>(UTC +7)</small></option>
+                                <option value="LHDT">Lord Howe Daylight Time <small>(UTC +11)</small></option>
+                                <option value="LHST">Lord Howe Standard Time <small>(UTC +10:30)</small></option>
+                                <option value="NFDT">Norfolk Daylight Time <small>(UTC +12)</small></option>
+                                <option value="NFT">ANorfolk Time <small>(UTC +11)</small></option>
+                            </optgroup>
+                            <optgroup label="CARIBBEAN">
+                                <option value="AST">Atlantic Standard Time <small>(UTC -4)</small></option>
+                                <option value="CDT">Cuba Daylight Time <small>(UTC -4)</small></option>
+                                <option value="CIDST">Cayman Islands Daylight Saving Time <small>(UTC -4)</small></option>
+                                <option value="CIST">Cayman Islands Standard Time <small>(UTC -5)</small></option>
+                                <option value="CST">Cuba Standard Time <small>(UTC -5)</small></option>
+                                <option value="EDT">Eastern Daylight Time <small>(UTC -4)</small></option>
+                                <option value="EST">Eastern Standard Time <small>(UTC -5)</small></option>
+                                <option value="ET">AEastern Time <small>(UTC -5:00/-4:00)</small></option>
+                            </optgroup>
+                            <optgroup label="CENTRAL AMERICA">
+                                <option value="CST">Central Standard Time <small>(UTC -6)</small></option>
+                                <option value="EST">Eastern Standard Time <small>(UTC -5)</small></option>
+                            </optgroup>
+                            <optgroup label="EUROPE">
+                                <option value="BST">British Summer Time <small>(UTC +1)</small></option>
+                                <option value="CEST">Central European Summer Time <small>(UTC +2)</small></option>
+                                <option value="CET">Central European Time <small>(UTC +1)</small></option>
+                                <option value="EEST">Eastern European Summer Time <small>(UTC +3)</small></option>
+                                <option value="EET">Eastern European Time <small>(UTC +2)</small></option>
+                                <option value="FET">Further-Eastern European Time <small>(UTC +3)</small></option>
+                                <option value="GET">Georgia Standard Time <small>(UTC +4)</small></option>
+                                <option value="GMT">Greenwich Mean Time <small>(UTC +0)</small></option>
+                                <option value="IST">Irish Standard Time <small>(UTC +1)</small></option>
+                                <option value="KUYT">Kuybyshev Time <small>(UTC +4)</small></option>
+                                <option value="MSD">Moscow Daylight Time <small>(UTC +4)</small></option>
+                                <option value="MSK">Moscow Standard Time <small>(UTC +3)</small></option>
+                                <option value="SAMT">Samara Time <small>(UTC +4)</small></option>
+                                <option value="TRT">Turkey Time <small>(UTC +3)</small></option>
+                                <option value="WEST">Western European Summer Time <small>(UTC +1)</small></option>
+                                <option value="WET">Western European Time <small>(UTC +0)</small></option>
+                            </optgroup>
+                            <optgroup label="INDIAN OCEAN">
+                                <option value="CCT">Cocos Islands Time <small>(UTC +6:30)</small></option>
+                                <option value="EAT">East Africa Time <small>(UTC +3)</small></option>
+                                <option value="IOT">Indian Chagos Time <small>(UTC +6)</small></option>
+                                <option value="TFT">French Southern and Antarctic Time <small>(UTC +5)</small></option>
+                            </optgroup>
+                            <optgroup label="MILITARY">
+                                <option value="A">Alpha Time Zone <small>(UTC +1)</small></option>
+                                <option value="B">Bravo Time Zone <small>(UTC +2)</small></option>
+                                <option value="C">Charlie Time Zone <small>(UTC +3)</small></option>
+                                <option value="D">Delta Time Zone <small>(UTC +4)</small></option>
+                                <option value="E">Echo Time Zone <small>(UTC +5)</small></option>
+                                <option value="F">Foxtrot Time Zone <small>(UTC +6)</small></option>
+                                <option value="G">Golf Time Zone <small>(UTC +7)</small></option>
+                                <option value="H">Hotel Time Zone <small>(UTC +8)</small></option>
+                                <option value="I">India Time Zone <small>(UTC +9)</small></option>
+                                <option value="K">Kilo Time Zone <small>(UTC +10)</small></option>
+                                <option value="L">Lima Time Zone <small>(UTC +11)</small></option>
+                                <option value="M">Mike Time Zone <small>(UTC +12)</small></option>
+                                <option value="N">November Time Zone <small>(UTC -1)</small></option>
+                                <option value="O">Oscar Time Zone <small>(UTC -2)</small></option>
+                                <option value="P">Papa Time Zone <small>(UTC -3)</small></option>
+                                <option value="Q">Quebec Time Zone <small>(UTC -4)</small></option>
+                                <option value="R">Romeo Time Zone <small>(UTC -5)</small></option>
+                                <option value="S">Sierra Time Zone <small>(UTC -6)</small></option>
+                                <option value="T">Tango Time Zone <small>(UTC -7)</small></option>
+                                <option value="U">Uniform Time Zone <small>(UTC -8)</small></option>
+                                <option value="V">Victor Time Zone <small>(UTC -9)</small></option>
+                                <option value="W">Whiskey Time Zone <small>(UTC -10)</small></option>
+                                <option value="X">X-ray Time Zone <small>(UTC -11)</small></option>
+                                <option value="Y">Yankee Time Zone <small>(UTC -12)</small></option>
+                                <option value="Z">Zulu Time Zone <small>(UTC +0)</small></option>
+                            </optgroup>
+                            <optgroup label="NORTH AMERICA">
+                                <option value="ADT">Atlantic Daylight Time <small>(UTC -3)</small></option>
+                                <option value="AKDT">Alaska Daylight Time <small>(UTC -8)</small></option>
+                                <option value="AKST">Alaska Standard Time <small>(UTC -9)</small></option>
+                                <option value="AST">Atlantic Standard Time <small>(UTC -4)</small></option>
+                                <option value="AT">Atlantic Time <small>(UTC -4:00/-3:00)</small></option>
+                                <option value="CDT">Central Daylight Time <small>(UTC -5)</small></option>
+                                <option value="CST">Central Standard Time <small>(UTC -6)</small></option>
+                                <option value="CT">Central Time <small>(UTC -6:00/-5:00)</small></option>
+                                <option value="EDT">Eastern Daylight Time <small>(UTC -4)</small></option>
+                                <option value="EGST">Eastern Greenland Summer Time <small>(UTC +0)</small></option>
+                                <option value="EGT">East Greenland Time <small>(UTC -1)</small></option>
+                                <option value="EST">Eastern Standard Time <small>(UTC -5)</small></option>
+                                <option value="ET">Eastern Time <small>(UTC -5:00/-4:00)</small></option>
+                                <option value="GMT">Greenwich Mean Time <small>(UTC +0)</small></option>
+                                <option value="HDT">Hawaii-Aleutian Daylight Time <small>(UTC -9)</small></option>
+                                <option value="HST">Hawaii Standard Time <small>(UTC -10)</small></option>
+                                <option value="MDT">Mountain Daylight Time <small>(UTC -6)</small></option>
+                                <option value="MST">Mountain Standard Time <small>(UTC -7)</small></option>
+                                <option value="MT">Mountain Time <small>(UTC -7:00/-6:00)</small></option>
+                                <option value="NDT">Newfoundland Daylight Time <small>(UTC -2:30)</small></option>
+                                <option value="NST">Newfoundland Standard Time <small>(UTC -3:30)</small></option>
+                                <option value="PDT">Pacific Daylight Time <small>(UTC -7)</small></option>
+                                <option value="PMDT">Pierre & Miquelon Daylight Time <small>(UTC -2)</small></option>
+                                <option value="PMST">Pierre & Miquelon Standard Time <small>(UTC -3)</small></option>
+                                <option value="PST">Pacific Standard Time <small>(UTC -8)</small></option>
+                                <option value="PT">Pacific Time <small>(UTC -8:00/-7:00)</small></option>
+                                <option value="WGST">Western Greenland Summer Time <small>(UTC -2)</small></option>
+                                <option value="WGT">West Greenland Time <small>(UTC -3)</small></option>
+                            </optgroup>
+                            <optgroup label="PACIFIC">
+                                <option value="AOE">AAnywhere On Earth <small>(UTC -12)</small></option>
+                                <option value="BST">Bougainville Standard Time <small>(UTC +11)</small></option>
+                                <option value="CHADT">Chatham Island Daylight Time <small>(UTC +13:45)</small></option>
+                                <option value="CHAST">Chatham Island Standard Time <small>(UTC +12:45)</small></option>
+                                <option value="CHUT">Chuuk Time <small>(UTC +10)</small></option>
+                                <option value="CKT">Cook Island Time <small>(UTC -10)</small></option>
+                                <option value="CHST">Chamorro Standard Time <small>(UTC +10)</small></option>
+                                <option value="EASST">Easter Island Summer Time <small>(UTC -5)</small></option>
+                                <option value="EAST">Easter Island Standard Time <small>(UTC -6)</small></option>
+                                <option value="FJST">Fiji Summer Time <small>(UTC +13)</small></option>
+                                <option value="FJT">Fiji Time <small>(UTC +12)</small></option>
+                                <option value="GALT">Galapagos Time <small>(UTC -6)</small></option>
+                                <option value="GAMT">Gambier Time <small>(UTC -9)</small></option>
+                                <option value="GILT">Gilbert Island Time <small>(UTC +12)</small></option>
+                                <option value="HST">Hawaii Standard Time <small>(UTC -10)</small></option>
+                                <option value="KOST">Kosrae Time <small>(UTC +11)</small></option>
+                                <option value="LINT">Line Islands Time <small>(UTC +14)</small></option>
+                                <option value="MART">Marquesas Time <small>(UTC -9:30)</small></option>
+                                <option value="MHT">Marshall Islands Time <small>(UTC +12)</small></option>
+                                <option value="NCT">New Caledonia Time <small>(UTC +11)</small></option>
+                                <option value="NRT">Nauru Time <small>(UTC +12)</small></option>
+                                <option value="NUT">Niue Time <small>(UTC -11)</small></option>
+                                <option value="NZDT">New Zealand Daylight Time <small>(UTC +13)</small></option>
+                                <option value="NZST">New Zealand Standard Time <small>(UTC +12)</small></option>
+                                <option value="PGT">Papua New Guinea Time <small>(UTC +10)</small></option>
+                                <option value="PHOT">Phoenix Island Time <small>(UTC +13)</small></option>
+                                <option value="PONT">Pohnpei Standard Time <small>(UTC +11)</small></option>
+                                <option value="PST">Pitcairn Standard Time <small>(UTC -8)</small></option>
+                                <option value="PWT">Palau Time <small>(UTC +9)</small></option>
+                                <option value="SBT">Solomon Islands Time <small>(UTC +11)</small></option>
+                                <option value="SST">Samoa Standard Time <small>(UTC -11)</small></option>
+                                <option value="TAHT">Tahiti Time <small>(UTC -10)</small></option>
+                                <option value="TKT">Tokelau Time <small>(UTC +13)</small></option>
+                                <option value="TOST">Tonga Summer Time <small>(UTC +14)</small></option>
+                                <option value="TOT">Tonga Time <small>(UTC +13)</small></option>
+                                <option value="TVT">Tuvalu Time <small>(UTC +12)</small></option>
+                                <option value="VUT">Vanuatu Time <small>(UTC +11)</small></option>
+                                <option value="WAKT">Wake Time <small>(UTC +12)</small></option>
+                                <option value="WFT">Wallis and Futuna Time <small>(UTC +12)</small></option>
+                                <option value="WST">West Samoa Time <small>(UTC +13)</small></option>
+                                <option value="YAPT">Yap Time <small>(UTC +10)</small></option>
+                            </optgroup>
+                            <optgroup label="SOUTH AMERICA">
+                                <option value="ACT">Acre Time <small>(UTC -5)</small></option>
+                                <option value="AMST">Amazon Summer Time <small>(UTC -3)</small></option>
+                                <option value="AMT">Amazon Time <small>(UTC -4)</small></option>
+                                <option value="ART">Argentina Time <small>(UTC -3)</small></option>
+                                <option value="BOT">Bolivia Time <small>(UTC -4)</small></option>
+                                <option value="BRST">Brasília Summer Time <small>(UTC -2)</small></option>
+                                <option value="BRT">Brasília Time <small>(UTC -3)</small></option>
+                                <option value="CLST">Chile Summer Time <small>(UTC -3)</small></option>
+                                <option value="CLT">Chile Standard Time <small>(UTC -4)</small></option>
+                                <option value="COT">Colombia Time <small>(UTC -5)</small></option>
+                                <option value="ECT">Ecuador Time <small>(UTC -5)</small></option>
+                                <option value="FKST">Falkland Islands Summer Time <small>(UTC -3)</small></option>
+                                <option value="FKT">Falkland Island Time <small>(UTC -4)</small></option>
+                                <option value="FNT">Fernando de Noronha Time <small>(UTC -2)</small></option>
+                                <option value="GFT">French Guiana Time <small>(UTC -3)</small></option>
+                                <option value="GST">South Georgia Time <small>(UTC -2)</small></option>
+                                <option value="GYT">Guyana Time <small>(UTC -4)</small></option>
+                                <option value="PET">Peru Time <small>(UTC -5)</small></option>
+                                <option value="PYST">Paraguay Summer Time <small>(UTC -3)</small></option>
+                                <option value="PYT">Paraguay Time <small>(UTC -4)</small></option>
+                                <option value="SRT">Suriname Time <small>(UTC -3)</small></option>
+                                <option value="UYST">Uruguay Summer Time <small>(UTC -2)</small></option>
+                                <option value="UYT">Uruguay Time <small>(UTC -3)</small></option>
+                                <option value="VET">Venezuelan Standard Time <small>(UTC -4)</small></option>
+                                <option value="WARST">Western Argentine Summer Time <small>(UTC -3)</small></option>
+                            </optgroup>
+                        </select>
+
+                        <button>SAVE</button>
+                        <button>CANCEL</button>
+                    </div>
+                </section>
+            </div>
+        </main>
     </body>
 </html>
