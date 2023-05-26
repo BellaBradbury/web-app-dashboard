@@ -27,3 +27,4 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 -OPEN TAGS-
 < scss components
 < grid layout
+< flex layout

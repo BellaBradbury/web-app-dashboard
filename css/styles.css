@@ -307,9 +307,28 @@ template {
   display: none;
 }
 
+main {
+  display: grid;
+  grid-template-areas: "nav" "dashboard";
+}
+@media (min-width: 768px) {
+  main {
+    grid-template-areas: "nav dashboard";
+    grid-template-columns: 1fr 10fr;
+  }
+}
+
+nav {
+  grid-area: nav;
+}
+
+#dashboard {
+  grid-area: dashboard;
+}
+
 img {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 * {
@@ -321,47 +340,11 @@ header {
 }
 
 nav {
-  background-color: orangered;
-}
-
-#alerts {
-  background-color: orange;
-}
-
-#traffic-overview {
-  background-color: yellow;
-}
-
-#traffic-daily {
-  background-color: yellowgreen;
-}
-
-#user-mobile {
-  background-color: green;
-}
-
-#social-stats {
-  background-color: turquoise;
-}
-
-#user-new {
   background-color: blue;
 }
 
-#activity {
-  background-color: blueviolet;
-}
-
-#user-message {
-  background-color: violet;
-}
-
-#settings {
-  background-color: purple;
-}
-
 #dashboard {
-  background-color: gray;
+  background-color: pink;
 }
 
 /*# sourceMappingURL=styles.css.map */

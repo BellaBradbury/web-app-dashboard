@@ -1,1 +1,20 @@
 // ---------- MAIN GRID STYLES ---------- //
+main {
+    display: grid;
+    grid-template-areas: 
+        'nav'
+        'dashboard';
+    @media (min-width: 768px) {
+        grid-template-areas: 
+            'nav dashboard';
+        grid-template-columns: 1fr 10fr;
+    }
+}
+
+nav {
+    grid-area: nav;
+}
+#dashboard {
+    grid-area: dashboard;
+}
+
