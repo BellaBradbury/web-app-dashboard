@@ -25,3 +25,4 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 * BUTTON `type`
 
 -OPEN TAGS-
+< scss components
