@@ -1,0 +1,52 @@
+// ---------- IMAGE STYLES ---------- //
+img {
+    height: 200px;
+    width: 200px;
+}
+
+
+// ---------- MARGIN EASE ---------- //
+* {
+    margin: 0 !important;
+}
+
+
+// ---------- GRID VISUAL EASE ---------- //
+header {
+    background-color: red;
+}
+nav {
+    background-color: orangered;
+}
+
+#alerts {
+    background-color: orange;
+}
+#traffic-overview {
+    background-color: yellow;
+}
+#traffic-daily {
+    background-color: yellowgreen;
+}
+#user-mobile {
+    background-color: green;
+}
+#social-stats {
+    background-color: turquoise;
+}
+#user-new {
+    background-color: blue;
+}
+#activity {
+    background-color: blueviolet;
+}
+#user-message {
+    background-color: violet;
+}
+#settings {
+    background-color: purple;
+}
+
+#dashboard {
+    background-color: gray;
+}
