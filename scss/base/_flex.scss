@@ -1,1 +1,6 @@
 // ---------- FLEX STYLES ---------- //
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
