@@ -6,10 +6,11 @@ main {
     grid-template-areas: 
         'nav'
         'dashboard';
-    @media (min-width: 768px) {
+
+    @include mq(m) {
         grid-template-areas: 
             'nav dashboard';
-        grid-template-rows: 1fr;
+         grid-template-rows: 1fr;
         grid-template-columns: 1fr 10fr;
     }
 }
@@ -17,50 +18,49 @@ main {
 nav {
     grid-area: nav;
 }
-#dashboard {
-    grid-area: dashboard;
-}
 
 
 // ---------- DASHBOARD GRID STYLES ---------- //
 #dashboard {
+    grid-area: dashboard;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, minmax(min-content, max-content));
     grid-template-areas: 
         'dash-title'
-        'alert'
-        'traffic-over'
-        'traffic-day'
-        'user-mobile'
-        'social-stats'
-        'user-new'
-        'activity'
-        'user-message'
-        'settings';
-    @media (min-width: 768px) {
+        'alr'
+        'tro'
+        'trd'
+        'umo'
+        'soc'
+        'une'
+        'act'
+        'ume'
+        'set';
+    @include mq(m) {
         grid-template-areas: 
             'dash-title .'
-            'alert alert'
-            'traffic-over traffic-over'
-            'traffic-day user-mobile'
-            'social-stats social-stats'
-            'user-new user-new'
-            'activity activity'
-            'user-message user-message'
-            'settings settings';
+            'alr alr'
+            'tro tro'
+            'trd umo'
+            'soc soc'
+            'une une'
+            'act act'
+            'ume ume'
+            'set set';
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
-    @media (min-width: 1024px) {
+    @include mq(l) {
         grid-template-areas: 
             'dash-title .'
-            'alert alert'
-            'traffic-over traffic-over'
-            'traffic-day user-mobile'
-            'social-stats social-stats'
-            'user-new activity'
-            'user-message settings';
+            'alr alr'
+            'tro tro'
+            'trd umo'
+            'soc soc'
+            'une act'
+            'ume set';
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
@@ -68,34 +68,13 @@ nav {
 #dash-title {
     grid-area: dash-title;
     max-width: 30%;
-    @media (min-width: 768px) {
+    @include mq(m) {
         max-width: 50%;
     }
 }
-#alerts {
-    grid-area: alert;
-}
-#traffic-overview {
-    grid-area: traffic-over;
-}
-#traffic-daily {
-    grid-area: traffic-day;
-}
-#user-mobile {
-    grid-area: user-mobile;
-}
-#social-stats {
-    grid-area: social-stats;
-}
-#user-new {
-    grid-area: user-new;
-}
-#activity {
-    grid-area: activity;
-}
-#user-message {
-    grid-area: user-message;
-}
-#settings {
-    grid-area: settings;
+
+@each $sect in $sects {
+    #sect-#{$sect} {
+      grid-area: #{$sect};
+    }
 }

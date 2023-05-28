@@ -327,24 +327,21 @@ nav {
 
 #dashboard {
   grid-area: dashboard;
-}
-
-#dashboard {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(10, minmax(min-content, max-content));
-  grid-template-areas: "dash-title" "alert" "traffic-over" "traffic-day" "user-mobile" "social-stats" "user-new" "activity" "user-message" "settings";
+  grid-template-areas: "dash-title" "alr" "tro" "trd" "umo" "soc" "une" "act" "ume" "set";
 }
 @media (min-width: 768px) {
   #dashboard {
-    grid-template-areas: "dash-title ." "alert alert" "traffic-over traffic-over" "traffic-day user-mobile" "social-stats social-stats" "user-new user-new" "activity activity" "user-message user-message" "settings settings";
+    grid-template-areas: "dash-title ." "alr alr" "tro tro" "trd umo" "soc soc" "une une" "act act" "ume ume" "set set";
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1024px) {
   #dashboard {
-    grid-template-areas: "dash-title ." "alert alert" "traffic-over traffic-over" "traffic-day user-mobile" "social-stats social-stats" "user-new activity" "user-message settings";
+    grid-template-areas: "dash-title ." "alr alr" "tro tro" "trd umo" "soc soc" "une act" "ume set";
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
   }
@@ -360,46 +357,217 @@ nav {
   }
 }
 
-#alerts {
-  grid-area: alert;
+#sect-alr {
+  grid-area: alr;
 }
 
-#traffic-overview {
-  grid-area: traffic-over;
+#sect-tro {
+  grid-area: tro;
 }
 
-#traffic-daily {
-  grid-area: traffic-day;
+#sect-trd {
+  grid-area: trd;
 }
 
-#user-mobile {
-  grid-area: user-mobile;
+#sect-umo {
+  grid-area: umo;
 }
 
-#social-stats {
-  grid-area: social-stats;
+#sect-soc {
+  grid-area: soc;
 }
 
-#user-new {
-  grid-area: user-new;
+#sect-une {
+  grid-area: une;
 }
 
-#activity {
-  grid-area: activity;
+#sect-act {
+  grid-area: act;
 }
 
-#user-message {
-  grid-area: user-message;
+#sect-ume {
+  grid-area: ume;
 }
 
-#settings {
-  grid-area: settings;
+#sect-set {
+  grid-area: set;
+}
+
+.flx-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flx-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+#sect-alr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#sect-tro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-tro div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #sect-tro div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#sect-tro div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 50%;
+}
+#sect-trd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-umo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-soc div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #sect-soc div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+#sect-soc div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-soc div div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-une div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-une div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 85%;
+}
+@media (min-width: 768px) {
+  #sect-une div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#sect-une div div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-une div div div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-act div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-act div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-act div div p {
+  text-align: center;
+}
+#sect-ume div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect-set div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  margin-right: auto;
 }
 
 img {
@@ -407,8 +575,17 @@ img {
   width: 50px;
 }
 
+.temp-img {
+  height: 250px;
+  width: 250px;
+}
+
 * {
   margin: 0 !important;
+}
+
+.overflow {
+  font-size: 50%;
 }
 
 header {

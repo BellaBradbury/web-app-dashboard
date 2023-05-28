@@ -3,11 +3,18 @@ img {
     height: 50px;
     width: 50px;
 }
+.temp-img {
+    height: 250px;
+    width: 250px;
+}
 
 
 // ---------- MARGIN EASE ---------- //
 * {
     margin: 0 !important;
+}
+.overflow {
+    font-size: 50%;
 }
 
 

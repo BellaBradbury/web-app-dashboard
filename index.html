@@ -11,10 +11,12 @@
     <body>
         <header>
             <h1>WebApp&trade;</h1>
-            <img src="svgs/bell.svg" alt="SVG">
-            <!-- GREEN NOTIFICATION DOT -->
-            <img src="images/member-1.jpg" alt="Member Profile Picture">
-            <p>Student Name</p>
+            <div>
+                <img src="svgs/bell.svg" alt="SVG">
+                <!-- GREEN NOTIFICATION DOT -->
+                <img src="images/member-1.jpg" alt="Member Profile Picture">
+                <p>Student Name</p>    
+            </div>
         </header>
         <main>
             <nav>
@@ -27,87 +29,111 @@
             <div id="dashboard">
                 <h2 id="dash-title">Dashboard</h2>
 
-                <section id="alerts">
+                <section id="sect-alr">
                     <p><strong>Alert:</strong> You have unread messages</p>
                     <button>X</button>
                 </section>
 
-                <section id="traffic-overview">
-                    <h3>TRAFFIC</h3>
+                <section id="sect-tro">
                     <div>
-                        <button>Hourly</button>
-                        <button>Daily</button>
-                        <button>Weekly</button>
-                        <button>Monthly</button>
+                        <h3>TRAFFIC</h3>
+                        <div>
+                            <button>Hourly</button>
+                            <button>Daily</button>
+                            <button>Weekly</button>
+                            <button>Monthly</button>
+                        </div>    
                     </div>
                     <!-- CHART -->
-                    <img src="svgs/bar-chart.svg" alt="TEMP IMG">
+                    <img src="svgs/bar-chart.svg" alt="TEMP IMG" class="temp-img">
                 </section>
                     
-                <section id="traffic-daily">
+                <section id="sect-trd">
                     <h3>DAILY TRAFFIC</h3>
                     <!-- CHART -->
-                    <img src="svgs/bar-chart.svg" alt="TEMP IMG">
+                    <img src="svgs/bar-chart.svg" alt="TEMP IMG" class="temp-img">
                 </section>
 
-                <section id="user-mobile">
+                <section id="sect-umo">
                     <h3>MOBILE USERS</h3>
                     <!-- CHART -->
-                    <img src="svgs/bar-chart.svg" alt="TEMP IMG">
+                    <img src="svgs/bar-chart.svg" alt="TEMP IMG" class="temp-img">
                 </section>
 
-                <section id="social-stats">
+                <section id="sect-soc">
                     <h3>SOCIAL STATS</h3>
                     <div>
                         <div>
                             <img src="svgs/facebook.svg" alt="SVG">
-                            <h4>Facebook</h4>
-                            <p>10,320</p>
+                            <div>
+                                <h4>Facebook</h4>
+                                <p>10,320</p>    
+                            </div>
                         </div>
                         <div>
                             <img src="svgs/instagram.svg" alt="SVG">
-                            <h4>Instagram</h4>
-                            <p>16,445</p>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>16,445</p>
+                            </div>
                         </div>
                         <div>
                             <img src="svgs/twitter.svg" alt="SVG">
-                            <h4>Twitter</h4>
-                            <p>22,189</p>
+                            <div>
+                                <h4>Twitter</h4>
+                                <p>22,189</p>    
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="user-new">
+                <section id="sect-une">
                     <h3>NEW MEMBERS</h3>
                     <div>
                         <div>
-                            <img src="images/member-1.jpg" alt="Member Profile Picture">
-                            <h4>Victoria Chambers</h4>
-                            <p>victoria.chambers80@example.com</p>
+                            <div>
+                                <img src="images/member-1.jpg" alt="Member Profile Picture">
+                                <div>
+                                    <h4>Victoria Chambers</h4>
+                                    <p>victoria.chambers80@example.com</p>    
+                                </div>
+                            </div>
                             <p>10/15/20</p>
                         </div>
                         <div>
-                            <img src="images/member-2.jpg" alt="Member Profile Picture">
-                            <h4>Dale Byrd</h4>
-                            <p>dale.byrd52@example.com</p>
+                            <div>
+                                <img src="images/member-2.jpg" alt="Member Profile Picture">
+                                <div>
+                                    <h4>Dale Byrd</h4>
+                                    <p>dale.byrd52@example.com</p>    
+                                </div>
+                            </div>
                             <p>10/15/20</p>
                         </div>
                         <div>
-                            <img src="images/member-3.jpg" alt="Member Profile Picture">
-                            <h4>Dawn Wood</h4>
-                            <p>dawn.wood16@example.com</p>
+                            <div>
+                                <img src="images/member-3.jpg" alt="Member Profile Picture">
+                                <div>
+                                    <h4>Dawn Wood</h4>
+                                    <p>dawn.wood16@example.com</p>    
+                                </div>
+                            </div>
                             <p>10/15/20</p>
                         </div>
                         <div>
-                            <img src="images/member-4.jpg" alt="Member Profile Picture">
-                            <h4>Dan Oliver</h4>
-                            <p>dan.oliver82@example.com</p>
+                            <div>
+                                <img src="images/member-4.jpg" alt="Member Profile Picture">
+                                <div>
+                                    <h4>Dan Oliver</h4>
+                                    <p>dan.oliver82@example.com</p>    
+                                </div>
+                            </div>
                             <p>10/15/20</p>
                         </div>
                     </div>
                 </section>
 
-                <section id="activity">
+                <section id="sect-act">
                     <h3>RECENT ACTIVITY</h3>
                     <div>
                         <div>
@@ -133,25 +159,29 @@
                     </div>
                 </section>
 
-                <section id="user-message">
+                <section id="sect-ume">
                     <h3>MESSAGE USER</h3>
                     <div>
-                        <input type="text" placeholder="Search for User">
-                        <textarea cols="30" rows="10" placeholder="Message for User"></textarea>
+                        <input type="text" placeholder="Search for User" class="overflow">
+                        <textarea cols="30" rows="10" placeholder="Message for User" class="overflow"></textarea>
                         <button>SEND</button>
                     </div>
                 </section>
 
-                <section id="settings">
+                <section id="sect-set">
                     <h3>SETTINGS</h3>
                     <div>
-                        <label for="email-notifications">Send Email Notifications</label>
-                        <button id="email-notifications">ON/OFF</button>
+                        <div>
+                            <label for="email-notifications">Send Email Notifications</label>
+                            <button id="email-notifications">ON/OFF</button>    
+                        </div>
 
-                        <label for="public-profile">Set Profile to Public</label>
-                        <button id="public-profile">ON/OFF</button>
+                        <div>
+                            <label for="public-profile">Set Profile to Public</label>
+                            <button id="public-profile">ON/OFF</button>    
+                        </div>
 
-                        <select name="timezone">
+                        <select name="timezone" class="overflow">
                             <option value="placeholder">Select Timezone</option>
                             <optgroup label="AFRICA">
                                 <option value="CAT">Central Africa Time <small>(UTC +2)</small></option>
@@ -453,8 +483,10 @@
                             </optgroup>
                         </select>
 
-                        <button>SAVE</button>
-                        <button>CANCEL</button>
+                        <div>
+                            <button>SAVE</button>
+                            <button>CANCEL</button>    
+                        </div>
                     </div>
                 </section>
             </div>

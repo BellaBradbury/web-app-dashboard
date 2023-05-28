@@ -1,0 +1,17 @@
+// ---------- MEDIA QUERIES ---------- //
+@mixin mq($break) {
+    $value: map-get($breakpoints, $break);
+
+    @media (min-width: $value) {
+        @content;
+    }
+}
+
+
+// ---------- FLEX ---------- //
+@mixin flex($d:column, $j:space-evenly, $a:center) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+    align-items: $a;
+}

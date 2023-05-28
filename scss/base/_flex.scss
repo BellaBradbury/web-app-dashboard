@@ -1,6 +1,111 @@
-// ---------- FLEX STYLES ---------- //
+// // ---------- FLEX STYLES ---------- //
+.flx- {
+    &row {
+        @include flex($d:row);
+    }
+    &col {
+        @include flex();
+    }
+}
+
+
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex($d:row, $j:space-between); 
+
+    div {
+        @include flex($d:row);
+    }
+}
+nav {
+    @include flex($d:row);
+
+    @include mq(m) {
+        @include flex($j:flex-start);
+    }
+}
+
+#sect- {
+    &alr {
+        @include flex($d:row, $j:space-between);
+    }
+    &tro {
+        @include flex();
+
+        div {
+            @include flex();
+
+            @include mq(m) {
+                @include flex($d:row, $j:space-between);
+            }
+    
+            div {
+                @include flex($d:row);
+                min-width: 50%;
+            }
+        }
+    }
+    &trd {
+        @include flex();
+    }
+    &umo {
+        @include flex();
+    }
+    &soc div {
+        @include flex();
+
+        @include mq(m) {
+            @include flex($d:row);
+        }
+
+        div {
+            @include flex($d:row);
+
+            div {
+                @include flex();
+            }
+        }
+    }
+    &une div {
+        @include flex();
+
+        div {
+            @include flex();
+            min-width: 85%;
+
+            @include mq(m) {
+                @include flex($d:row, $j:space-between);
+            }
+
+            div {
+                @include flex();
+
+                div {
+                    @include flex();
+                }
+            }
+        }
+    }
+    &act div {
+        @include flex();
+
+        div {
+            @include flex();
+    
+            p {
+                text-align: center;
+            }
+        }
+    }
+    &ume div {
+        @include flex();
+    }
+    &set div {
+        div {
+            @include flex($d:row, $j:space-between);
+        }
+    }
+}
+
+h3 {
+    margin-right: auto;
 }

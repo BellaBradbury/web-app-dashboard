@@ -1,2 +1,3 @@
 // ---------- ROOT COMPILED SCSS INTO CSS ---------- //
-@import 'base/export';
+@import 'utilities/export',
+        'base/export';
