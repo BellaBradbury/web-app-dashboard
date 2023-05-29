@@ -29,7 +29,7 @@ nav {
         @include flex($d:row, $j:space-between);
     }
     &tro {
-        @include flex();
+        @include flex($a:normal);
 
         div {
             @include flex();
@@ -51,17 +51,17 @@ nav {
         @include flex();
     }
     &soc div {
-        @include flex();
+        @include flex($j:flex-start, $a:normal);
 
         @include mq(m) {
             @include flex($d:row);
         }
 
         div {
-            @include flex($d:row);
+            @include flex($d:row, $j:flex-start);
 
             div {
-                @include flex();
+                @include flex($a:flex-start);
             }
         }
     }
@@ -100,6 +100,8 @@ nav {
         @include flex();
     }
     &set div {
+        @include flex($a:normal);
+
         div {
             @include flex($d:row, $j:space-between);
         }

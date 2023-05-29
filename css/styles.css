@@ -444,7 +444,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: normal;
 }
 #sect-tro div {
   display: flex;
@@ -482,8 +482,8 @@ nav {
 #sect-soc div {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: normal;
 }
 @media (min-width: 768px) {
   #sect-soc div {
@@ -496,14 +496,14 @@ nav {
 #sect-soc div div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 #sect-soc div div div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 #sect-une div {
   display: flex;
@@ -558,6 +558,12 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+#sect-set div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: normal;
 }
 #sect-set div div {
   display: flex;
