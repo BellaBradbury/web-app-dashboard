@@ -34,7 +34,10 @@ nav {
     }
     &nav{
         @include flex($d:row);
-        width: 50%;
+
+        @include mq(m) {
+            width: 50%;
+        }
     }
 }
 .soc- {

@@ -5,6 +5,20 @@ $breakpoints: (
 );
 
 
+// ---------- TYPOGRAPHY ---------- //
+$font-basic: 'Montserrat', sans-serif;
+$font-m: 400;
+$font-l: 500;
+
+
+// ---------- TYPOGRAPHY ---------- //
+$color-accent: #473c85;
+
+$color-darkest: black;
+$color-medium: lighten(black, 25);
+$color-lightest: darken(white, 15);
+
+
 // ---------- SECTION MAP ---------- //
 $sects: (
     'alr',

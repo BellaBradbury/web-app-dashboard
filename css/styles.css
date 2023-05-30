@@ -460,7 +460,11 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   width: -webkit-fill-available;
-  width: 50%;
+}
+@media (min-width: 768px) {
+  .tro-nav {
+    width: 50%;
+  }
 }
 
 .soc-main {
@@ -668,6 +672,57 @@ nav {
 }
 #dashboard section, #dashboard h2 {
   box-shadow: 0px 0px 0px 3px green inset;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: black;
+}
+
+strong {
+  font-weight: 500;
+}
+
+button {
+  text-transform: uppercase;
+  color: #d9d9d9;
+}
+
+h1 {
+  font-size: larger;
+}
+
+h2 {
+  font-size: larger;
+  font-weight: 500;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: large;
+}
+
+h4 {
+  font-size: medium;
+}
+
+p {
+  font-size: medium;
+}
+
+.soc-stats h4 {
+  color: #473c85;
+}
+.soc-stats p {
+  font-size: larger;
+  color: #404040;
+}
+
+.une-info-in p {
+  color: #473c85;
 }
 
 /*# sourceMappingURL=styles.css.map */

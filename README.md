@@ -22,7 +22,8 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 * SVG `alt=""` accessibility
 * IMG `alt=""` accessibility
 * FORM `id` & `name`
-* BUTTON `type`
+* BUTTON `type`\
+* PLACEHOLDER text design
 
 -OPEN TAGS-
 < scss components

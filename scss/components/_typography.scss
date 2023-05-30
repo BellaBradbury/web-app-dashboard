@@ -1,0 +1,55 @@
+// ---------- UNIVERSAL STYLE ---------- //
+* {
+    font-family: $font-basic;
+    font-weight: $font-m;
+    letter-spacing: -0.5px;
+    color: $color-darkest;
+}
+strong {
+    font-weight: $font-l;
+}
+button {
+    text-transform: uppercase;
+    color: $color-lightest;
+}
+
+
+// ---------- HEADER STYLES ---------- //
+h1 {
+    font-size: larger;
+}
+h2 {
+    font-size: larger;
+    font-weight: $font-l;
+}
+h3 {
+    text-transform: uppercase;
+    font-weight: $font-l;
+    font-size: large;
+}
+h4 {
+    font-size: medium;
+}
+
+
+// ---------- PARAGRAPH STYLES ---------- //
+p {
+    font-size: medium;
+}
+
+
+// ---------- SECTION STYLES ---------- //
+.soc-stats {
+    h4 {
+        color: $color-accent;
+    }
+    p {
+        font-size: larger;
+        color: $color-medium;
+    }
+}
+.une-info-in {
+    p {
+        color: $color-accent;
+    }
+}
