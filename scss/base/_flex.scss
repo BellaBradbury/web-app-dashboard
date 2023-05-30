@@ -1,5 +1,7 @@
 // // ---------- MAIN ---------- //
 header {
+    background-color: $color-accent;
+
     @include flex($d:row, $j:space-between); 
 
     div {

@@ -1,5 +1,7 @@
 // ---------- MAIN GRID STYLES ---------- //
 main {
+    background-color: $color-lightest;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 20fr;
@@ -16,6 +18,8 @@ main {
 }
 
 nav {
+    background-color: darken($color-accent, 15);
+
     grid-area: nav;
 }
 
