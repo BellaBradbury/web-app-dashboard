@@ -8,10 +8,36 @@
 }
 
 
-// ---------- FLEX ---------- //
+// ---------- LAYOUT ---------- //
 @mixin flex($d:column, $j:space-evenly, $a:center) {
     display: flex;
     flex-direction: $d;
     justify-content: $j;
     align-items: $a;
+}
+
+
+// ---------- CARDS ---------- //
+@mixin card-user {
+    &main {
+        @include flex();
+    }
+    &card {
+        @include flex();
+        min-width: 85%;
+        text-align: center;
+    
+        @include mq(m) {
+            @include flex($d:row, $j:space-between);
+            text-align: left;
+        }   
+    }
+    &info- {
+        &out {
+            @include flex();
+        }
+        &in {
+            @include flex();
+        }
+    }
 }

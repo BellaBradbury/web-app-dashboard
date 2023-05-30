@@ -1,3 +1,7 @@
+.temp-img {
+  margin: auto;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -393,19 +397,6 @@ nav {
   grid-area: set;
 }
 
-.flx-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.flx-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 header {
   display: flex;
   flex-direction: row;
@@ -434,146 +425,156 @@ nav {
   }
 }
 
+h3 {
+  margin-right: auto;
+}
+
 #sect-alr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-#sect-tro {
+
+.tro-main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: normal;
 }
-#sect-tro div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
 @media (min-width: 768px) {
-  #sect-tro div {
+  .tro-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 }
-#sect-tro div div {
+.tro-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   min-width: 50%;
 }
-#sect-trd {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#sect-umo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#sect-soc div {
+
+.soc-main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: normal;
 }
 @media (min-width: 768px) {
-  #sect-soc div {
+  .soc-main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
 }
-#sect-soc div div {
+.soc-card {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-#sect-soc div div div {
+.soc-stats {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-#sect-une div {
+
+.une-main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-#sect-une div div {
+.une-card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   min-width: 85%;
+  text-align: center;
 }
 @media (min-width: 768px) {
-  #sect-une div div {
+  .une-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
   }
 }
-#sect-une div div div {
+.une-info-out {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-#sect-une div div div div {
+.une-info-in {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-#sect-act div {
+
+.act-main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-#sect-act div div {
+.act-card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-}
-#sect-act div div p {
+  min-width: 85%;
   text-align: center;
 }
-#sect-ume div {
+@media (min-width: 768px) {
+  .act-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+.act-info-out {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-#sect-set div {
+.act-info-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ume-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.set-main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: normal;
 }
-#sect-set div div {
+.set-field {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-h3 {
-  margin-right: auto;
 }
 
 img {

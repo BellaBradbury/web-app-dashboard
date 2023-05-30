@@ -1,14 +1,4 @@
 // // ---------- FLEX STYLES ---------- //
-.flx- {
-    &row {
-        @include flex($d:row);
-    }
-    &col {
-        @include flex();
-    }
-}
-
-
 header {
     @include flex($d:row, $j:space-between); 
 
@@ -24,90 +14,57 @@ nav {
     }
 }
 
-#sect- {
-    &alr {
-        @include flex($d:row, $j:space-between);
-    }
-    &tro {
+h3 {
+    margin-right: auto;
+}
+
+#sect-alr{
+    @include flex($d:row, $j:space-between);
+}
+.tro- {
+    &main {
         @include flex($a:normal);
 
-        div {
-            @include flex();
-
-            @include mq(m) {
-                @include flex($d:row, $j:space-between);
-            }
-    
-            div {
-                @include flex($d:row);
-                min-width: 50%;
-            }
+        @include mq(m) {
+            @include flex($d:row, $j:space-between);
         }
     }
-    &trd {
-        @include flex();
+    &nav{
+        @include flex($d:row);
+        min-width: 50%;
     }
-    &umo {
-        @include flex();
-    }
-    &soc div {
+}
+.soc- {
+    &main {
         @include flex($j:flex-start, $a:normal);
 
         @include mq(m) {
             @include flex($d:row);
         }
-
-        div {
-            @include flex($d:row, $j:flex-start);
-
-            div {
-                @include flex($a:flex-start);
-            }
-        }
     }
-    &une div {
-        @include flex();
-
-        div {
-            @include flex();
-            min-width: 85%;
-
-            @include mq(m) {
-                @include flex($d:row, $j:space-between);
-            }
-
-            div {
-                @include flex();
-
-                div {
-                    @include flex();
-                }
-            }
-        }
+    &card {
+        @include flex($d:row, $j:flex-start);
     }
-    &act div {
-        @include flex();
-
-        div {
-            @include flex();
-    
-            p {
-                text-align: center;
-            }
-        }
-    }
-    &ume div {
-        @include flex();
-    }
-    &set div {
-        @include flex($a:normal);
-
-        div {
-            @include flex($d:row, $j:space-between);
-        }
+    &stats {
+        @include flex($a:flex-start);
     }
 }
-
-h3 {
-    margin-right: auto;
+.une- {
+    @include card-user;
+}
+.act- {
+    @include card-user;
+}
+.ume- {
+    &main {
+        @include flex();
+    }
+}
+.set- {
+    &main {
+        @include flex($a:normal);
+    }
+    &field {
+        @include flex($d:row, $j:space-between);
+    }
 }
