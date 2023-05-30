@@ -1,9 +1,13 @@
-// // ---------- FLEX STYLES ---------- //
+// // ---------- MAIN ---------- //
 header {
     @include flex($d:row, $j:space-between); 
 
     div {
         @include flex($d:row);
+
+        @include mq(m) {
+            width: 30%;
+        }
     }
 }
 nav {
@@ -14,10 +18,8 @@ nav {
     }
 }
 
-h3 {
-    margin-right: auto;
-}
 
+// // ---------- SECTIONS ---------- //
 #sect-alr{
     @include flex($d:row, $j:space-between);
 }
@@ -26,12 +28,13 @@ h3 {
         @include flex($a:normal);
 
         @include mq(m) {
-            @include flex($d:row, $j:space-between);
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
     &nav{
         @include flex($d:row);
-        min-width: 50%;
+        width: 50%;
     }
 }
 .soc- {
@@ -39,7 +42,8 @@ h3 {
         @include flex($j:flex-start, $a:normal);
 
         @include mq(m) {
-            @include flex($d:row);
+            flex-direction: row;
+            justify-content: space-evenly;
         }
     }
     &card {
@@ -50,10 +54,18 @@ h3 {
     }
 }
 .une- {
-    @include card-user;
+    @include card-user-lo;
 }
 .act- {
-    @include card-user;
+    @include card-user-lo {
+        button {
+            display: none;
+
+            @include mq(m) {
+                display: block;
+            }
+        }
+    }
 }
 .ume- {
     &main {
@@ -66,5 +78,17 @@ h3 {
     }
     &field {
         @include flex($d:row, $j:space-between);
+
+        &-tog {
+            @include mq(m) {
+                width: 50%;
+            }
+        }
     }
+}
+
+
+// // ---------- ELEMENTS ---------- //
+h3 {
+    margin-right: auto;
 }

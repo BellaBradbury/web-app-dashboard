@@ -402,12 +402,19 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: -webkit-fill-available;
 }
 header div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
+}
+@media (min-width: 768px) {
+  header div {
+    width: 30%;
+  }
 }
 
 nav {
@@ -415,6 +422,7 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
 }
 @media (min-width: 768px) {
   nav {
@@ -425,15 +433,12 @@ nav {
   }
 }
 
-h3 {
-  margin-right: auto;
-}
-
 #sect-alr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: -webkit-fill-available;
 }
 
 .tro-main {
@@ -441,13 +446,12 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: normal;
+  width: -webkit-fill-available;
 }
 @media (min-width: 768px) {
   .tro-main {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 }
 .tro-nav {
@@ -455,7 +459,8 @@ h3 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  min-width: 50%;
+  width: -webkit-fill-available;
+  width: 50%;
 }
 
 .soc-main {
@@ -466,10 +471,8 @@ h3 {
 }
 @media (min-width: 768px) {
   .soc-main {
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
   }
 }
 .soc-card {
@@ -483,6 +486,7 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+  width: -webkit-fill-available;
 }
 
 .une-main {
@@ -490,21 +494,26 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
+}
+@media (min-width: 1024px) {
+  .une-main {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 .une-card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-width: 85%;
+  width: -webkit-fill-available;
   text-align: center;
 }
 @media (min-width: 768px) {
   .une-card {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     text-align: left;
   }
 }
@@ -513,12 +522,25 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
+}
+@media (min-width: 768px) {
+  .une-info-out {
+    flex-direction: row;
+    justify-content: start;
+  }
 }
 .une-info-in {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
+}
+@media (min-width: 768px) {
+  .une-info-in {
+    align-items: start;
+  }
 }
 
 .act-main {
@@ -526,22 +548,35 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
+}
+@media (min-width: 1024px) {
+  .act-main {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 .act-card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-width: 85%;
+  width: -webkit-fill-available;
   text-align: center;
 }
 @media (min-width: 768px) {
   .act-card {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     text-align: left;
+  }
+}
+.act-card button {
+  display: none;
+}
+@media (min-width: 768px) {
+  .act-card button {
+    display: block;
   }
 }
 .act-info-out {
@@ -549,12 +584,25 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
+}
+@media (min-width: 768px) {
+  .act-info-out {
+    flex-direction: row;
+    justify-content: start;
+  }
 }
 .act-info-in {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
+}
+@media (min-width: 768px) {
+  .act-info-in {
+    align-items: start;
+  }
 }
 
 .ume-main {
@@ -562,6 +610,7 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: -webkit-fill-available;
 }
 
 .set-main {
@@ -569,12 +618,23 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: normal;
+  width: -webkit-fill-available;
 }
 .set-field {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: -webkit-fill-available;
+}
+@media (min-width: 768px) {
+  .set-field-tog {
+    width: 50%;
+  }
+}
+
+h3 {
+  margin-right: auto;
 }
 
 img {

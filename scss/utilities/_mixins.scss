@@ -14,30 +14,47 @@
     flex-direction: $d;
     justify-content: $j;
     align-items: $a;
+
+    @if ($j == 'space-evenly' or $j == 'space-between') {
+        width: -webkit-fill-available;
+    }
 }
-
-
-// ---------- CARDS ---------- //
-@mixin card-user {
+@mixin card-user-lo {
     &main {
         @include flex();
+
+        @include mq(l) {
+            align-items: flex-start;
+            justify-content: space-between;
+        }
     }
     &card {
         @include flex();
-        min-width: 85%;
         text-align: center;
     
         @include mq(m) {
-            @include flex($d:row, $j:space-between);
+            flex-direction: row;
+            justify-content: space-between;
             text-align: left;
-        }   
+        } 
+        
+        @content;
     }
     &info- {
         &out {
             @include flex();
+
+            @include mq(m) {
+                flex-direction: row;
+                justify-content: start;
+            }
         }
         &in {
             @include flex();
+
+            @include mq(m) {
+                align-items: start;
+            }
         }
     }
 }
