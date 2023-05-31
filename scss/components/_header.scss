@@ -1,0 +1,36 @@
+// // ---------- HEADER STYLES ---------- //
+header {
+    background-color: $color-accent;
+    padding: 2%;
+
+    @include flex($d:row, $j:space-between); 
+
+    h1 {
+        color: $color-lightest;
+
+        strong {
+            color: $color-lightest;
+        }
+    }
+
+    div {
+        @include flex($d:row);
+
+        @include mq(m) {
+            width: 30%;
+        }
+
+        img:first-of-type {
+            width: 10%;
+        }
+        img {
+            width: 20%;
+
+            @include round;
+        }
+
+        p {
+            color: $color-lightest;
+        }
+    }
+}

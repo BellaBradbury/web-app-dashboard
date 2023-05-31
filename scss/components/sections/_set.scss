@@ -1,0 +1,15 @@
+// ---------- SETTINGS STYLES ---------- //
+.set- {
+    &main {
+        @include flex($a:normal);
+    }
+    &field {
+        @include flex($d:row, $j:space-between);
+
+        &-tog {
+            @include mq(m) {
+                width: 50%;
+            }
+        }
+    }
+}

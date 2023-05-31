@@ -1,0 +1,17 @@
+// ---------- SOCIAL STATS SECT ---------- //
+.soc- {
+    &main {
+        @include flex($j:flex-start, $a:normal);
+
+        @include mq(m) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+    &card {
+        @include flex($d:row, $j:flex-start);
+    }
+    &stats {
+        @include flex($a:flex-start);
+    }
+}

@@ -1,0 +1,22 @@
+// ---------- TRAFFIC OVERVIEW SECT ---------- //
+.tro- {
+    &main {
+        @include flex($a:normal);
+
+        @include mq(m) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &nav{
+        @include flex($d:row);
+
+        @include mq(m) {
+            width: 50%;
+        }
+
+        button {
+            color: $color-darkest;
+        }
+    }
+}

@@ -58,3 +58,10 @@
         }
     }
 }
+
+
+// ---------- DESIGN ---------- //
+@mixin round {
+    border: none;
+    border-radius: 50%;
+}

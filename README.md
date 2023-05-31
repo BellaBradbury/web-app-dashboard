@@ -29,3 +29,4 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 < scss components
 < grid layout
 < flex layout
+< color design

@@ -1,0 +1,4 @@
+// ---------- ALERT SECT ---------- //
+#sect-alr{
+    @include flex($d:row, $j:space-between);
+}

@@ -1,0 +1,12 @@
+// ---------- RECENT ACTIVITIES SECT ---------- //
+.act- {
+    @include card-user-lo {
+        button {
+            display: none;
+
+            @include mq(m) {
+                display: block;
+            }
+        }
+    }
+}

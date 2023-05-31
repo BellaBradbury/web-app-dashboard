@@ -4,7 +4,7 @@ main {
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 20fr;
+    grid-template-rows: 1fr 30fr;
     grid-template-areas: 
         'nav'
         'dashboard';
@@ -71,7 +71,9 @@ nav {
 }
 #dash-title {
     grid-area: dash-title;
-    max-width: 30%;
+    min-width: 30%;
+    max-width: min-content;
+
     @include mq(m) {
         max-width: 50%;
     }
@@ -80,5 +82,6 @@ nav {
 @each $sect in $sects {
     #sect-#{$sect} {
       grid-area: #{$sect};
+      border-top: solid 2px $color-light;
     }
 }

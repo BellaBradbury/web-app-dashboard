@@ -1,0 +1,12 @@
+// // ---------- NAV STYLES ---------- //
+nav {
+    @include flex($d:row);
+
+    @include mq(m) {
+        @include flex($j:flex-start);
+    }
+
+    img {
+        width: 15%;
+    }
+}
