@@ -2,5 +2,20 @@
 .ume- {
     &main {
         @include flex();
+        width: 100vw;
+
+        input, textarea {
+            width: 100%;
+            border: $border-thin;
+            box-sizing: border-box;
+            background-color: $color-light;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            border: $border-thin;
+            background-color: $color-accent;
+            border-radius: 5px;
+        }
     }
 }

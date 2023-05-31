@@ -9,17 +9,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <h1><strong>Web</strong>App&trade;</h1>
-            <div>
+            <div class="header-main">
                 <img src="svgs/bell.svg" alt="SVG">
                 <!-- GREEN NOTIFICATION DOT -->
-                <img src="images/member-1.jpg" alt="Member Profile Picture">
-                <p>Student Name</p>    
+                <div class="header-usr">
+                    <img src="images/member-1.jpg" alt="Member Profile Picture">
+                    <p>Student Name</p>        
+                </div>
             </div>
         </header>
         <main>
@@ -186,8 +188,8 @@
                 <section id="sect-ume">
                     <h3>MESSAGE USER</h3>
                     <div class="ume-main">
-                        <input type="text" placeholder="Search for User" class="overflow placeholder">
-                        <textarea cols="30" rows="10" placeholder="Message for User" class="overflow placeholder"></textarea>
+                        <input type="text" placeholder="Search for User" class="placeholder">
+                        <textarea cols="30" rows="10" placeholder="Message for User" class="placeholder"></textarea>
                         <button>SEND</button>
                     </div>
                 </section>
@@ -205,7 +207,7 @@
                             <button id="public-profile">ON/OFF</button>    
                         </div>
 
-                        <select name="timezone" class="overflow set-field">
+                        <select name="timezone" class="set-field">
                             <option value="placeholder">Select Timezone</option>
                             <optgroup label="AFRICA">
                                 <option value="CAT">Central Africa Time <small>(UTC +2)</small></option>
@@ -508,8 +510,8 @@
                         </select>
 
                         <div class="set-field">
-                            <button>SAVE</button>
-                            <button>CANCEL</button>    
+                            <button class="set-field-save">SAVE</button>
+                            <button class="set-field-cancel">CANCEL</button>    
                         </div>
                     </div>
                 </section>

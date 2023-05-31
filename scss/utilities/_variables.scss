@@ -7,16 +7,16 @@ $breakpoints: (
 
 // ---------- TYPOGRAPHY ---------- //
 $font-basic: 'Montserrat', sans-serif;
-$font-m: 400;
+$font-m: 300;
 $font-l: 500;
 
 
-// ---------- TYPOGRAPHY ---------- //
-$color-accent: #473c85;
+// ---------- COLORS ---------- //
+$color-accent: #786eb4;
 
 $color-darkest: black;
 $color-medium: lighten(black, 25);
-$color-light: lighten(black, 75);
+$color-light: darken(white, 15);
 $color-lightest: darken(white, 5);
 
 
@@ -32,3 +32,8 @@ $sects: (
     'ume',
     'set',
 );
+
+
+// ---------- BORDERS ---------- //
+$border-thin: solid 2px red;
+$border-thick: solid 4px red;

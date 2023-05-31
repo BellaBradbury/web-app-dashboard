@@ -8,6 +8,13 @@
 }
 
 
+// ---------- DESIGN ---------- //
+@mixin round {
+    border: none;
+    border-radius: 50%;
+}
+
+
 // ---------- LAYOUT ---------- //
 @mixin flex($d:column, $j:space-evenly, $a:center) {
     display: flex;
@@ -31,7 +38,8 @@
     &card {
         @include flex();
         text-align: center;
-    
+        border-bottom: $border-thin;
+
         @include mq(m) {
             flex-direction: row;
             justify-content: space-between;
@@ -48,6 +56,11 @@
                 flex-direction: row;
                 justify-content: start;
             }
+
+            img {
+                @include round();
+                width: 80px;
+            }
         }
         &in {
             @include flex();
@@ -60,8 +73,3 @@
 }
 
 
-// ---------- DESIGN ---------- //
-@mixin round {
-    border: none;
-    border-radius: 50%;
-}

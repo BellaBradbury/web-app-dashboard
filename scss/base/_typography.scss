@@ -30,12 +30,14 @@ h3 {
 }
 h4 {
     font-size: medium;
+    margin: 0;
 }
 
 
 // ---------- PARAGRAPH STYLES ---------- //
 p {
     font-size: medium;
+    margin: 0;
 }
 
 
@@ -43,9 +45,10 @@ p {
 .soc-stats {
     h4 {
         color: $color-accent;
+        font-weight: $font-l;
     }
     p {
-        font-size: larger;
+        font-size: xx-large;
         color: $color-medium;
     }
 }

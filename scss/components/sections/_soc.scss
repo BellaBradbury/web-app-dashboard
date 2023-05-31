@@ -10,8 +10,14 @@
     }
     &card {
         @include flex($d:row, $j:flex-start);
+
+        border: $border-thin;
+        background-color: $color-light;
+        border-radius: 5px;
     }
     &stats {
         @include flex($a:flex-start);
+
+        margin-left: 10%;
     }
 }

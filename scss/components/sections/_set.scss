@@ -2,14 +2,42 @@
 .set- {
     &main {
         @include flex($a:normal);
+
+        width: 100vw;
     }
     &field {
         @include flex($d:row, $j:space-between);
+        
+        &-save {
+            background-color: $color-accent;
+            width: 40%;
+            border: $border-thin;
+            border-radius: 5px;
+        }
 
         &-tog {
+            button {
+                background-color: $color-accent;
+                border: $border-thick;
+            }
+
+
             @include mq(m) {
                 width: 50%;
             }
         }
+
+        &-cancel {
+            background-color: $color-medium;
+            width: 40%;
+            border: $border-thin;
+            border-radius: 5px;
+        }
     }
+}
+select {
+    background-color: $color-light;
+    color: $color-medium;
+    border: $border-thin;
+    border-radius: 5px;
 }

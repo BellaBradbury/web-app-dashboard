@@ -2,3 +2,6 @@
 .une- {
     @include card-user-lo;
 }
+.une-card:last-of-type {
+    border-bottom: none;
+}

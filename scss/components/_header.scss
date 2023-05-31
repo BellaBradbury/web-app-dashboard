@@ -12,25 +12,36 @@ header {
             color: $color-lightest;
         }
     }
+}
 
-    div {
-        @include flex($d:row);
+.header- {
+    &main {
+        @include flex($d:row, $j:flex-end);
 
         @include mq(m) {
             width: 30%;
         }
 
-        img:first-of-type {
-            width: 10%;
-        }
         img {
-            width: 20%;
+            width: 25px;
+        }
+    }
 
+    &usr {
+        border-left: $border-thin;
+        margin: auto;
+
+        @include flex($d:row, $j:flex-end);
+
+        img {
+            width: 50px;
+        
             @include round;
         }
 
         p {
             color: $color-lightest;
+            font-size: small;
         }
     }
 }

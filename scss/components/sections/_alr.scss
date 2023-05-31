@@ -1,4 +1,22 @@
 // ---------- ALERT SECT ---------- //
 #sect-alr{
+    background-color: $color-accent;
+    border-radius: 2px;
+    padding: 2%;
+    border: none;
+
+    p {
+        color: $color-lightest;
+
+        strong {
+            color: $color-lightest;
+        }
+    }
+
     @include flex($d:row, $j:space-between);
+
+    button {
+        background-color: $color-accent;
+        border: none;
+    }
 }

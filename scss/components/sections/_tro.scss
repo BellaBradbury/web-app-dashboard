@@ -1,4 +1,16 @@
 // ---------- TRAFFIC OVERVIEW SECT ---------- //
+#sect-tro {
+    border-top: none;
+}
+
+.temp-img {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+
+    display: inline-block;
+}
+
 .tro- {
     &main {
         @include flex($a:normal);
@@ -17,6 +29,7 @@
 
         button {
             color: $color-darkest;
+            border: none;
         }
     }
 }
