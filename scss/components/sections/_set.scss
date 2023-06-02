@@ -4,6 +4,10 @@
         @include flex($a:normal);
 
         width: 100vw;
+
+        @include mq(m) {
+            width: 100%;
+        }
     }
     &field {
         @include flex($d:row, $j:space-between);
@@ -19,6 +23,7 @@
             button {
                 background-color: $color-accent;
                 border: $border-thick;
+                border-radius: 50px;
             }
 
 
@@ -36,8 +41,29 @@
     }
 }
 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: $color-light;
     color: $color-medium;
     border: $border-thin;
     border-radius: 5px;
+    height: 40px;
+}
+select::-ms-expand {
+    display: none;
+}
+
+.select-wrap {
+    position: relative;
+    width: 100%;
+}
+.select-wrap::after {
+    content: "▼";
+    color: $color-accent;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    right: 3%;
+    top: 35%;
 }

@@ -14,6 +14,14 @@
         border: $border-thin;
         background-color: $color-light;
         border-radius: 5px;
+
+        img {
+            width: 50px;
+        }
+
+        @include mq(m) {
+            width: 30%;
+        }
     }
     &stats {
         @include flex($a:flex-start);

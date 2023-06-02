@@ -4,6 +4,10 @@
         @include flex();
         width: 100vw;
 
+        @include mq(m) {
+            width: 100%;
+        }
+
         input, textarea {
             width: 100%;
             border: $border-thin;

@@ -24,12 +24,15 @@ header {
 
         img {
             width: 25px;
+
+            @include mq(m) {
+                width: 30px;
+            }
         }
     }
 
     &usr {
         border-left: $border-thin;
-        margin: auto;
 
         @include flex($d:row, $j:flex-end);
 

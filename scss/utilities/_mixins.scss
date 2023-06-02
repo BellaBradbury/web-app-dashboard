@@ -60,6 +60,10 @@
             img {
                 @include round();
                 width: 80px;
+
+                @include mq(m) {
+                    width: 60px;
+                }
             }
         }
         &in {
