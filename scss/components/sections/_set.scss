@@ -20,12 +20,70 @@
         }
 
         &-tog {
-            button {
-                background-color: $color-accent;
-                border: $border-thick;
-                border-radius: 50px;
-            }
 
+            &-cot {
+
+                input {
+                    -webkit-appearance: none;
+                    position: relative;
+                    width: 100px;
+                    height: 30px;
+
+                    background: none;
+                    border: $border-thick;
+                    border-radius: 50px;
+
+                    transition: background-color .3s;
+                    outline: none;
+                }
+                input::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 30%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                    height: 1.25rem;
+                    width: 1.25rem;
+                    background: none;
+                    border: $border-thin;
+                    transition: left .3s;
+                }
+                input:checked::after {
+                    left: 70%;
+                }
+
+                label {
+                    position: relative;
+                    display: block;
+                    height: inherit;
+                    border-radius: inherit;
+                    background-color: $color-accent;
+                    top: -26px;
+                    z-index: 5;
+                }
+                label:before, label::after {
+                    position: absolute;
+                    color: black;
+                }
+                label:before {
+                    content: attr(data-off);
+                    right: 11px;
+                }
+                label::after {
+                    content: attr(data-on);
+                    left: 11px;
+                    opacity: 0;
+                }
+
+                input:checked~label:before {
+                    opacity: 0;
+                 }
+                 input:checked~label:after {
+                    opacity: 1;
+                 }
+
+            }
 
             @include mq(m) {
                 width: 50%;
