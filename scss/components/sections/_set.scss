@@ -1,4 +1,9 @@
 // ---------- SETTINGS STYLES ---------- //
+#sect-set {
+    @include mq(l) {
+        border-left: $border-thin;
+    }
+}
 .set- {
     &main {
         @include flex($a:normal);
@@ -25,11 +30,12 @@
 
                 input {
                     -webkit-appearance: none;
+                    appearance: none;
                     position: relative;
-                    width: 100px;
-                    height: 30px;
+                    width: 110px;
+                    height: 40px;
 
-                    background: none;
+                    background-color: $color-medium;
                     border: $border-thick;
                     border-radius: 50px;
 
@@ -40,17 +46,20 @@
                     content: '';
                     position: absolute;
                     top: 50%;
-                    left: 30%;
+                    left: 20%;
                     transform: translate(-50%, -50%);
                     border-radius: 50%;
                     height: 1.25rem;
                     width: 1.25rem;
-                    background: none;
+                    background-color: $color-lightest;
                     border: $border-thin;
                     transition: left .3s;
                 }
+                input:checked {
+                    background-color: $color-accent;
+                }
                 input:checked::after {
-                    left: 70%;
+                    left: 80%;
                 }
 
                 label {
@@ -58,21 +67,20 @@
                     display: block;
                     height: inherit;
                     border-radius: inherit;
-                    background-color: $color-accent;
-                    top: -26px;
+                    top: -32px;
                     z-index: 5;
                 }
                 label:before, label::after {
                     position: absolute;
-                    color: black;
+                    color: $color-lightest;
                 }
                 label:before {
                     content: attr(data-off);
-                    right: 11px;
+                    right: 15px;
                 }
                 label::after {
                     content: attr(data-on);
-                    left: 11px;
+                    left: 15px;
                     opacity: 0;
                 }
 
@@ -118,6 +126,7 @@ select::-ms-expand {
 }
 .select-wrap::after {
     content: "▼";
+    text-shadow: 0px 0px 15px rgba($color-darkest, 75%);
     color: $color-accent;
     position: absolute;
     z-index: 1;

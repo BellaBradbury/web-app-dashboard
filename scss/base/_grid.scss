@@ -32,7 +32,7 @@ nav {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, minmax(min-content, max-content));
     grid-template-areas: 
-        'dash-title'
+        'til'
         'alr'
         'tro'
         'trd'
@@ -44,7 +44,7 @@ nav {
         'set';
     @include mq(m) {
         grid-template-areas: 
-            'dash-title .'
+            'til til'
             'alr alr'
             'tro tro'
             'trd umo'
@@ -58,7 +58,7 @@ nav {
     }
     @include mq(l) {
         grid-template-areas: 
-            'dash-title .'
+            'til til'
             'alr alr'
             'tro tro'
             'trd umo'
@@ -67,15 +67,6 @@ nav {
             'ume set';
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
-    }
-}
-#dash-title {
-    grid-area: dash-title;
-    min-width: 30%;
-    max-width: min-content;
-
-    @include mq(m) {
-        max-width: 50%;
     }
 }
 

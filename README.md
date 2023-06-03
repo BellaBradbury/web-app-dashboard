@@ -27,7 +27,3 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 * FOCUS STATES
 
 -OPEN TAGS-
-< scss components
-< grid layout
-< flex layout
-< color design

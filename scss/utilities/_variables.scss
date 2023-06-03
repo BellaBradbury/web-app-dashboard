@@ -15,13 +15,14 @@ $font-l: 500;
 $color-accent: #786eb4;
 
 $color-darkest: black;
-$color-medium: lighten(black, 25);
+$color-medium: lighten(black, 50);
 $color-light: darken(white, 15);
-$color-lightest: darken(white, 5);
+$color-lightest: white;
 
 
 // ---------- SECTION MAP ---------- //
 $sects: (
+    'til',
     'alr',
     'tro',
     'trd',

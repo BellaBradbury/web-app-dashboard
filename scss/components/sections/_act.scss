@@ -1,4 +1,9 @@
 // ---------- RECENT ACTIVITIES SECT ---------- //
+#sect-act {
+    @include mq(l) {
+        border-left: $border-thin;
+    }
+}
 .act- {
     @include card-user-lo {
         button {
