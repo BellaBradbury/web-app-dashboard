@@ -455,6 +455,11 @@ p {
   color: #786eb4;
 }
 
+.icn-light {
+  stroke: white;
+  fill: white;
+}
+
 header {
   background-color: #786eb4;
   padding: 2%;
@@ -482,11 +487,11 @@ header h1 strong {
     width: 30%;
   }
 }
-.header-main img {
+.header-main svg {
   width: 25px;
 }
 @media (min-width: 768px) {
-  .header-main img {
+  .header-main svg {
     width: 30px;
   }
 }
@@ -522,7 +527,7 @@ nav {
     align-items: center;
   }
 }
-nav img {
+nav svg {
   width: 50px;
 }
 
@@ -641,8 +646,11 @@ nav img {
   background-color: #d9d9d9;
   border-radius: 5px;
 }
-.soc-card img {
+.soc-card svg {
   width: 50px;
+  background-color: #786eb4;
+  border-radius: 50px;
+  padding: 5%;
 }
 @media (min-width: 768px) {
   .soc-card {

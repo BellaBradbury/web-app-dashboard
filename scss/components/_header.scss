@@ -22,7 +22,7 @@ header {
             width: 30%;
         }
 
-        img {
+        svg {
             width: 25px;
 
             @include mq(m) {

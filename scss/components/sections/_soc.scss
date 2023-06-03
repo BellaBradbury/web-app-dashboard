@@ -15,8 +15,11 @@
         background-color: $color-light;
         border-radius: 5px;
 
-        img {
+        svg {
             width: 50px;
+            background-color: $color-accent;
+            border-radius: 50px;
+            padding: 5%;
         }
 
         @include mq(m) {
