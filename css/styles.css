@@ -583,13 +583,6 @@ nav svg {
   border-top: none;
 }
 
-.temp-img {
-  height: 250px;
-  width: 250px;
-  margin: auto;
-  display: inline-block;
-}
-
 .tro-main {
   display: flex;
   flex-direction: column;
@@ -621,8 +614,14 @@ nav svg {
   border: none;
 }
 
-#sect-umo {
-  border-left: solid 2px red;
+#chart-tro-d, #chart-tro-w, #chart-tro-m {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #sect-umo {
+    border-left: solid 2px red;
+  }
 }
 
 .soc-main {

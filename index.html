@@ -70,20 +70,23 @@
                             <button>Monthly</button>
                         </div>    
                     </div>
-                    <!-- ||||| CHART ||||| -->
-                    <img src="svgs/bar-chart.svg" alt="TEMP IMG" class="temp-img">
+                    <!-- TRAFFIC OVERVIEW CHARTS: hour, day, week, month -->
+                    <canvas id="chart-tro-h" chart="hourly"></canvas>
+                    <canvas id="chart-tro-d" chart="daily" style="display: none;"></canvas>
+                    <canvas id="chart-tro-w" chart="weekly" style="display: none;"></canvas>
+                    <canvas id="chart-tro-m" chart="monthly"style="display: none;"></canvas>
                 </section>
                     
                 <section id="sect-trd">
                     <h3>DAILY TRAFFIC</h3>
-                    <!-- ||||| CHART ||||| -->
-                    <img src="svgs/bar-chart.svg" alt="TEMP IMG" class="temp-img">
+                    <!-- TRAFFIC DAILY CHART -->
+                    <canvas id="chart-trd"></canvas>
                 </section>
 
                 <section id="sect-umo">
                     <h3>MOBILE USERS</h3>
-                    <!-- ||||| CHART ||||| -->
-                    <img src="svgs/bar-chart.svg" alt="TEMP IMG" class="temp-img">
+                    <!-- MOBILE USER CHART -->
+                    <canvas id="chart-umo"></canvas>
                 </section>
 
                 <section id="sect-soc">
@@ -229,7 +232,7 @@
                         <div class="set-field set-field-tog">
                             <p>Send Email Notifications</p>
                             <div class="set-field-tog-cot">
-                                <input id="email-notifications" type="checkbox" name="email-note"></input>    
+                                <input id="email-notifications" type="checkbox" name="email-note" checked></input>    
                                 <label data-off="OFF" data-on="ON" for="email-notifications"></label>
                             </div>
                         </div>
@@ -237,7 +240,7 @@
                         <div class="set-field set-field-tog">
                             <p>Set Profile to Public</p>
                             <div class="set-field-tog-cot">
-                                <input id="public-profile" type="checkbox" name="public-pro"></input>    
+                                <input id="public-profile" type="checkbox" name="public-pro" checked></input>    
                                 <label data-off="OFF" data-on="ON" for="public-profile"></label>
                             </div>
                         </div>
@@ -555,4 +558,7 @@
             </div>
         </main>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.min.js" integrity="sha512-TJ7U6JRJx5IpyvvO9atNnBzwJIoZDaQnQhb0Wmw32Rj5BQHAmJG16WzaJbDns2Wk5VG6gMt4MytZApZG47rCdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/app.js"></script>
 </html>
