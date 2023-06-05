@@ -20,7 +20,6 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 
 -TO DO-
 * SVG `alt=""` accessibility
-* PLACEHOLDER text design
 * FOCUS STATES
 * SELECT placeholder
 * CHART ANIMATIONS

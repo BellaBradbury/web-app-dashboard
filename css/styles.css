@@ -552,7 +552,7 @@ nav svg {
   }
 }
 #sect-til hr {
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   border: none;
   width: 100%;
   height: 100%;
@@ -659,7 +659,7 @@ nav svg {
   justify-content: flex-start;
   align-items: center;
   border: solid 2px red;
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   border-radius: 5px;
 }
 .soc-card svg {
@@ -856,7 +856,7 @@ nav svg {
   width: 100%;
   border: solid 2px red;
   box-sizing: border-box;
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   border-radius: 5px;
 }
 .ume-main button {
@@ -972,7 +972,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #d9d9d9;
+  background-color: #e6e6e6;
   color: gray;
   border: solid 2px red;
   border-radius: 5px;
