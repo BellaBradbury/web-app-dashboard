@@ -12,8 +12,6 @@ chartBar.addEventListener('click', (e) => {
             let data = chart.getAttribute('chart').toLowerCase();
 
             if (opt == data) {
-                console.log(chart);
-
                 chart.style.display = 'block';
             } else {
                 chart.style.display = 'none';
