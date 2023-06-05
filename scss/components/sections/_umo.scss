@@ -3,4 +3,8 @@
     @include mq(m) {
         border-left: $border-thin;
     }
+
+    canvas {
+        width: 100%;
+    }
 }

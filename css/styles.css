@@ -582,6 +582,9 @@ nav svg {
 #sect-tro {
   border-top: none;
 }
+#sect-tro canvas {
+  width: 100%;
+}
 
 .tro-main {
   display: flex;
@@ -614,14 +617,17 @@ nav svg {
   border: none;
 }
 
-#chart-tro-d, #chart-tro-w, #chart-tro-m {
-  display: none;
+#sect-tro canvas {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   #sect-umo {
     border-left: solid 2px red;
   }
+}
+#sect-umo canvas {
+  width: 100%;
 }
 
 .soc-main {

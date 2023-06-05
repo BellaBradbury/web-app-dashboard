@@ -1,6 +1,10 @@
 // ---------- TRAFFIC OVERVIEW SECT ---------- //
 #sect-tro {
     border-top: none;
+
+    canvas {
+        width: 100%;
+    }
 }
 
 .tro- {
@@ -27,8 +31,3 @@
     }
 }
 
-#chart-tro- {
-    &d, &w, &m {
-        display: none;
-    }
-}
