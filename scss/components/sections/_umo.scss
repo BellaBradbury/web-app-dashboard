@@ -3,8 +3,9 @@
     @include mq(m) {
         border-left: $border-thin;
     }
-
-    canvas {
-        width: 100%;
-    }
+}
+.umo-chart {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }

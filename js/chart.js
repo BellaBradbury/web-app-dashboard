@@ -1,3 +1,20 @@
+// ---------- dry variables ---------- //
+const scales = { y: {beginAtZero: true} };
+const plugins = { legend: {display: false} };
+
+const dataWeek = {
+    labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    datasets: [{
+        data: [9000, 7000, 6500, 4000, 5210, 8600, 11000],
+        borderWidth: 1
+    }]
+};
+
+const colorP = '120, 110, 180'; // PURPLE - accent color of main page
+const colorS = '119, 186, 126'; // TEAL
+const colorT = '109, 191, 186'; // GREEN
+const colorQ = '168, 103, 168'; // PINK
+
 // TRAFFIC OVERVIEW CHART - HOURLY
 const troCotHour = document.getElementById('chart-tro-h');
 
@@ -11,19 +28,12 @@ let troChartHour = new Chart(troCotHour, {
         }]
     },
     options: {
-        backgroundColor: 'rgba(120, 110, 180, .25)',
+        backgroundColor: `rgba(${colorP}, .25)`,
         fill: true,
         tension: 0.5,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            }
-        }
+        // maintainAspectRatio: false,
+        scales: scales,
+        plugins: plugins
     }
 });
 
@@ -40,19 +50,12 @@ let troChartDay = new Chart(troCotDay, {
         }]
     },
     options: {
-        backgroundColor: 'rgba(109, 191, 186, .25)',
+        backgroundColor: `rgba(${colorT}, .25)`,
         fill: true,
         tension: 0.5,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            }
-        }
+        // maintainAspectRatio: false,
+        scales: scales,
+        plugins: plugins
     }
 });
 
@@ -61,27 +64,14 @@ const troCotWeek = document.getElementById('chart-tro-w');
 
 let troChartWeek = new Chart(troCotWeek, {
     type: 'line',
-    data: {
-        labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-        datasets: [{
-            data: [9000, 7000, 6500, 4000, 5210, 8600, 11000],
-            borderWidth: 1
-        }]
-    },
+    data: dataWeek,
     options: {
-        backgroundColor: 'rgba(168, 103, 168, .25)',
+        backgroundColor: `rgba(${colorQ}, .25)`,
         fill: true,
         tension: 0.5,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            }
-        }
+        // maintainAspectRatio: false,
+        scales: scales,
+        plugins: plugins
     }
 });
 
@@ -98,19 +88,12 @@ let troChartMonth = new Chart(troCotMonth, {
         }]
     },
     options: {
-        backgroundColor: 'rgba(119, 186, 126, .25)',
+        backgroundColor: `rgba(${colorS}, .25)`,
         fill: true,
+        // maintainAspectRatio: false,
         tension: 0.5,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            }
-        }
+        scales: scales,
+        plugins: plugins
     }
 });
 
@@ -119,26 +102,13 @@ const trdCot = document.getElementById('chart-trd');
 
 let trdChart = new Chart(trdCot, {
     type: 'bar',
-    data: {
-        labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-        datasets: [{
-            data: [9000, 7000, 6500, 4000, 5210, 8600, 11000],
-            borderWidth: 1
-        }]
-    },
+    data: dataWeek,
     options: {
-        backgroundColor: 'rgba(120, 110, 180)',
+        backgroundColor: `rgba(${colorP})`,
         fill: true,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        },
-        plugins: {
-            legend: {
-                display: false
-            }
-        }
+        // maintainAspectRatio: false,
+        scales: scales,
+        plugins: plugins
     }
 });
 
@@ -156,12 +126,13 @@ let umoChart = new Chart(umoCot, {
     },
     options: {
         backgroundColor: [
-            'rgba(120, 110, 180)',
-            'rgba(119, 186, 126)',
-            'rgba(109, 191, 186)'
+            `rgba(${colorP})`,
+            `rgba(${colorS})`,
+            `rgba(${colorT})`
         ],
         weight: 0,
         fill: true,
+        // maintainAspectRatio: false,
         scales: {
             y: {
                 display: false

@@ -308,6 +308,10 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 main {
   background-color: white;
   display: grid;
@@ -338,8 +342,8 @@ nav {
 @media (min-width: 768px) {
   #dashboard {
     grid-template-areas: "til til" "alr alr" "tro tro" "trd umo" "soc soc" "une une" "act act" "ume ume" "set set";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, minmax(min-content, max-content));
+    grid-template-columns: repeat(2, minmax(1fr, 1fr));
   }
 }
 @media (min-width: 1024px) {
@@ -582,9 +586,6 @@ nav svg {
 #sect-tro {
   border-top: none;
 }
-#sect-tro canvas {
-  width: 100%;
-}
 
 .tro-main {
   display: flex;
@@ -616,8 +617,15 @@ nav svg {
   background-color: white;
   border: none;
 }
+.tro-charts {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-#sect-tro canvas {
+.trd-chart {
+  position: relative;
+  height: 100%;
   width: 100%;
 }
 
@@ -626,7 +634,10 @@ nav svg {
     border-left: solid 2px red;
   }
 }
-#sect-umo canvas {
+
+.umo-chart {
+  position: relative;
+  height: 100%;
   width: 100%;
 }
 

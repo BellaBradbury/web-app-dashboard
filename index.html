@@ -71,22 +71,28 @@
                         </div>    
                     </div>
                     <!-- TRAFFIC OVERVIEW CHARTS: hour, day, week, month -->
-                    <canvas id="chart-tro-h" chart="hourly"></canvas>
-                    <canvas id="chart-tro-d" chart="daily" style="display: none;"></canvas>
-                    <canvas id="chart-tro-w" chart="weekly" style="display: none;"></canvas>
-                    <canvas id="chart-tro-m" chart="monthly"style="display: none;"></canvas>
+                    <div class="tro-charts">
+                        <canvas id="chart-tro-h" chart="hourly"></canvas>
+                        <canvas id="chart-tro-d" chart="daily" style="display: none;"></canvas>
+                        <canvas id="chart-tro-w" chart="weekly" style="display: none;"></canvas>
+                        <canvas id="chart-tro-m" chart="monthly"style="display: none;"></canvas>    
+                    </div>
                 </section>
                     
                 <section id="sect-trd">
                     <h3>DAILY TRAFFIC</h3>
                     <!-- TRAFFIC DAILY CHART -->
-                    <canvas id="chart-trd"></canvas>
+                    <div class="trd-chart">
+                        <canvas id="chart-trd"></canvas>
+                    </div>
                 </section>
 
                 <section id="sect-umo">
                     <h3>MOBILE USERS</h3>
                     <!-- MOBILE USER CHART -->
-                    <canvas id="chart-umo"></canvas>
+                    <div class="umo-chart">
+                        <canvas id="chart-umo"></canvas>
+                    </div>
                 </section>
 
                 <section id="sect-soc">
@@ -220,15 +226,15 @@
                 <section id="sect-ume">
                     <h3>MESSAGE USER</h3>
                     <div class="ume-main">
-                        <input type="text" placeholder="Search for User" class="placeholder">
-                        <textarea cols="30" rows="10" placeholder="Message for User" class="placeholder"></textarea>
+                        <input type="text" placeholder="Search for User" class="placeholder" id="user-search" name="user-search">
+                        <textarea cols="30" rows="10" placeholder="Message for User" class="placeholder" id="user-message" name="user-message"></textarea>
                         <button>SEND</button>
                     </div>
                 </section>
 
                 <section id="sect-set">
                     <h3>SETTINGS</h3>
-                    <div class="set-main">
+                    <form class="set-main">
                         <div class="set-field set-field-tog">
                             <p>Send Email Notifications</p>
                             <div class="set-field-tog-cot">
@@ -551,13 +557,14 @@
 
                         <div class="set-field">
                             <button class="set-field-save">SAVE</button>
-                            <button class="set-field-cancel">CANCEL</button>    
+                            <button class="set-field-cancel" type="reset">CANCEL</button>    
                         </div>
-                    </div>
+                    </form>
                 </section>
             </div>
         </main>
     </body>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.min.js" integrity="sha512-TJ7U6JRJx5IpyvvO9atNnBzwJIoZDaQnQhb0Wmw32Rj5BQHAmJG16WzaJbDns2Wk5VG6gMt4MytZApZG47rCdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/chart.js"></script>
     <script src="js/app.js"></script>

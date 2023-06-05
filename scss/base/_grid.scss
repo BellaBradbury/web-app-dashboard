@@ -53,8 +53,8 @@ nav {
             'act act'
             'ume ume'
             'set set';
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat( 9, minmax(min-content, max-content) );
+        grid-template-columns: repeat( 2, minmax(1fr, 1fr) );
     }
     @include mq(l) {
         grid-template-areas: 
