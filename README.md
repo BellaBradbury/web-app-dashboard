@@ -25,4 +25,4 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 
 -OPEN TAGS-
 < chart sizing issue
-< notifications
+< form validation

@@ -110,8 +110,9 @@ const userArr = [
 ]
 
 function searchDisplay(usr) {
-    const resultElement = document.createElement('p');
+    const resultElement = document.createElement('button');
     resultElement.innerHTML = usr;
+    resultElement.className = 'search-opt';
     searchCot.appendChild(resultElement);
 
     if (usr === 'NO MATCHES AVAILABLE') {
@@ -123,7 +124,6 @@ function searchDisplay(usr) {
 
 searchBar.addEventListener('keyup', (e)=> {
     let searchValue = searchBar.value.toLowerCase();
-    console.log('SEARCH VALUE: ', searchValue);
 
     searchCot.innerHTML = '';
 
@@ -138,10 +138,73 @@ searchBar.addEventListener('keyup', (e)=> {
             }
         });
 
+        let searchOptsHTML = document.getElementsByClassName('search-opt');
+        let searchOptsArr = Array.from(searchOptsHTML);
+
+        searchOptsArr.forEach(opt => {
+            opt.addEventListener('click', (e)=> {
+                opt.disabled = true;
+                searchBar.value = opt.innerHTML;
+                searchCot.style.display = 'none';
+            });
+        });
+
         if ( !searchCot.hasChildNodes() ) {
-            searchDisplay('NO MATCHES AVAILABLE');
+            const noElement = document.createElement('h5');
+            noElement.innerHTML = 'NO MATCHES AVAILABLE';
+            searchCot.appendChild(noElement);
         }
     } else {
         searchCot.style.display = 'none';
     }
 });
+
+
+// MESSAGE FORM VALIDATION 
+const msgForm = document.getElementsByClassName('ume-main')[0];
+const msgArea = document.getElementById('user-message');
+const sendMsgBtn = document.getElementById('btn-message-send');
+
+msgForm.addEventListener('submit', (e)=> {
+    if (!searchBar.value) {
+        e.preventDefault();
+
+        let errMsgElement = document.createElement('h5');
+        errMsgElement.innerHTML = 'Please provide a recipient.';
+        errMsgElement.classList.add('err-msg');
+
+        console.log(`SEARCH NOT VALID`);
+    } else {
+        let counter = 0;
+
+        userArr.forEach(user => {
+            let usrL = user.toLowerCase();
+    
+            if ( usrL === searchBar.value.toLowerCase() ) {
+                counter ++;
+            }
+        });
+
+        console.log(counter);
+        if (counter !== 1) {
+            e.preventDefault();
+
+            let errMsgElement = document.createElement('h5');
+            errMsgElement.innerHTML = 'Entered name does not match known members.';
+            errMsgElement.classList.add('err-msg');
+    
+            console.log(`USER DOES NOT EXIST`);  
+        }
+    }
+
+    if ( !msgArea.value || msgArea.value.trim().length === 0 ) {
+        e.preventDefault();
+
+        let errMsgElement = document.createElement('h5');
+        errMsgElement.innerHTML = 'Please enter a message.';
+        errMsgElement.classList.add('err-msg');
+
+        console.log(`NO MESSAGE`);  
+    }
+});
+

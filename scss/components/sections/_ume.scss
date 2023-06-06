@@ -26,6 +26,21 @@
 #search-results {
     display: none;
     text-align: left;
+    position: relative;
     font-size: medium;
     width: 100%;
+
+    h5 {
+        color: $color-warn;
+        font-size: large;
+        font-weight: $font-l;
+        margin: 0;
+    }
+
+    button {
+        background: none;
+        color: $color-darkest;
+        border: none;
+        text-align: left;
+    }
 }

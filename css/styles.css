@@ -936,8 +936,21 @@ nav a svg {
 #search-results {
   display: none;
   text-align: left;
+  position: relative;
   font-size: medium;
   width: 100%;
+}
+#search-results h5 {
+  color: #a81d0a;
+  font-size: large;
+  font-weight: 500;
+  margin: 0;
+}
+#search-results button {
+  background: none;
+  color: black;
+  border: none;
+  text-align: left;
 }
 
 @media (min-width: 1024px) {
