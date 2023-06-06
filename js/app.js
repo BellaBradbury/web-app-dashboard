@@ -27,8 +27,6 @@ function createNotes() {
     alrDot.style.display = 'block';
     btnNotes.style['pointer-events'] = 'auto';
     btnNotes.style['pointerEvents'] = 'auto';
-
-    console.log('NOTES CREATED'); 
 }
 createNotes();
 
@@ -49,7 +47,6 @@ btnNotes.addEventListener('click', (e) => {
                 let notesCount = notesCot.children.length;
 
                 if (notesCount === 0) {
-                    console.log('NO NOTIFICATIONS');
             
                     alrBanner.style.display = 'none';
                     alrDot.style.display = 'none';
@@ -63,6 +60,12 @@ btnNotes.addEventListener('click', (e) => {
                     }, 5000);
                 }
             });
+        });
+
+        window.addEventListener('click', (e)=> {
+            if (!notesCot.contains(e.target) && !btnNotes.contains(e.target)) {
+                notesCot.style.display = 'none';
+            }
         });
     } else {
         btnNotes.setAttribute('itms', 'hidden');
@@ -149,6 +152,12 @@ searchBar.addEventListener('keyup', (e)=> {
             });
         });
 
+        window.addEventListener('click', (e)=> {
+            if (!searchCot.contains(e.target)) {
+                searchCot.style.display = 'none';
+            }
+        });
+
         if ( !searchCot.hasChildNodes() ) {
             const noElement = document.createElement('h5');
             noElement.innerHTML = 'NO MATCHES AVAILABLE';
@@ -165,15 +174,17 @@ const msgForm = document.getElementsByClassName('ume-main')[0];
 const msgArea = document.getElementById('user-message');
 const sendMsgBtn = document.getElementById('btn-message-send');
 
+const errSearch = document.getElementById('err-search');
+const errArea = document.getElementById('err-area');
+
 msgForm.addEventListener('submit', (e)=> {
+    let errMsgSearch = '';
+    let errMsgArea = '';
+
     if (!searchBar.value) {
         e.preventDefault();
 
-        let errMsgElement = document.createElement('h5');
-        errMsgElement.innerHTML = 'Please provide a recipient.';
-        errMsgElement.classList.add('err-msg');
-
-        console.log(`SEARCH NOT VALID`);
+        errMsgSearch = 'Please provide a recipient.'
     } else {
         let counter = 0;
 
@@ -185,26 +196,46 @@ msgForm.addEventListener('submit', (e)=> {
             }
         });
 
-        console.log(counter);
         if (counter !== 1) {
             e.preventDefault();
 
-            let errMsgElement = document.createElement('h5');
-            errMsgElement.innerHTML = 'Entered name does not match known members.';
-            errMsgElement.classList.add('err-msg');
-    
-            console.log(`USER DOES NOT EXIST`);  
+            errMsgSearch = 'Entered name does not match known members.';
         }
     }
 
     if ( !msgArea.value || msgArea.value.trim().length === 0 ) {
         e.preventDefault();
 
-        let errMsgElement = document.createElement('h5');
-        errMsgElement.innerHTML = 'Please enter a message.';
-        errMsgElement.classList.add('err-msg');
+        errMsgArea = 'Please enter a message.';
+    }
 
-        console.log(`NO MESSAGE`);  
+    if (errMsgSearch !== undefined) {
+        errSearch.innerHTML = errMsgSearch;
+        errSearch.style.display = 'block';
+
+        searchBar.style.border = 'solid 4px #a81d0a';
+    } else {
+        console.log('REACHED');
+        searchBar.style.borderColor = '#77ba7e';
+    }
+
+    if (errMsgSearch === '') {
+        searchBar.style.borderColor = '#77ba7e';
+        errSearch.style.display = 'none';
+    } else if (errMsgSearch !== undefined) {
+        errSearch.innerHTML = errMsgSearch;
+        errSearch.style.display = 'block';
+
+        searchBar.style.border = 'solid 4px #a81d0a';
+    }
+
+    if (errMsgArea === '') {
+        msgArea.style.border = 'solid 2px #77ba7e';
+        errArea.style.display = 'none';
+    } else if (errMsgArea !== undefined) {
+        errArea.innerHTML = errMsgArea;
+        errArea.style.display = 'block';
+        msgArea.style.border = 'solid 4px #a81d0a';
     }
 });
 

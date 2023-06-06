@@ -932,6 +932,14 @@ nav a svg {
   background-color: #786eb4;
   border-radius: 5px;
 }
+.ume-main h5 {
+  display: none;
+  color: #a81d0a;
+  font-size: small;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+}
 
 #search-results {
   display: none;

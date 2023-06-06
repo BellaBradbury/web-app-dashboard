@@ -238,12 +238,18 @@
 
                 <section id="sect-ume">
                     <h3>MESSAGE USER</h3>
-                    <form class="ume-main">
+                    <form class="ume-main" autocomplete="off">
                         <input type="text" placeholder="Search for User" class="placeholder" id="user-search" name="user-search">
                         <div id="search-results">
                             <!-- AUTOCOMPLETE SEARCH RESULTS SHOWN HERE VIA APP.JS -->
                         </div>
+                        <h5 id="err-search">
+                            <!-- ERROR MESSAGES INSTERTED VIA APP.JS -->
+                        </h5>
                         <textarea cols="30" rows="10" placeholder="Message for User" class="placeholder" id="user-message" name="user-message"></textarea>
+                        <h5 id="err-area">
+                            <!-- ERROR MESSAGES INSTERTED VIA APP.JS -->
+                        </h5>
                         <button id="btn-message-send" type="submit">SEND</button>
                     </form>
                 </section>

@@ -21,6 +21,15 @@
             background-color: $color-accent;
             border-radius: 5px;
         }
+
+        h5 {
+            display: none;
+            color: $color-warn;
+            font-size: small;
+            font-weight: $font-l;
+            font-style: italic;
+            margin: 0;
+        }
     }
 }
 #search-results {
