@@ -97,3 +97,51 @@ chartBar.addEventListener('click', (e) => {
         });
     }
 });
+
+
+// SEARCH AUTOCOMPLETE
+const searchBar = document.getElementById('user-search');
+const searchCot = document.getElementById('search-results');
+const userArr = [
+    'Victoria Chambers',
+    'Dale Byrd',
+    'Dawn Wood',
+    'Dan Oliver'
+]
+
+function searchDisplay(usr) {
+    const resultElement = document.createElement('p');
+    resultElement.innerHTML = usr;
+    searchCot.appendChild(resultElement);
+
+    if (usr === 'NO MATCHES AVAILABLE') {
+        resultElement.style.color = '#a81d0a';
+        resultElement.style.fontSize = 'large';
+        resultElement.style.fontWeight = 'bold';
+    }
+}
+
+searchBar.addEventListener('keyup', (e)=> {
+    let searchValue = searchBar.value.toLowerCase();
+    console.log('SEARCH VALUE: ', searchValue);
+
+    searchCot.innerHTML = '';
+
+    if (searchValue) {
+        searchCot.style.display = 'block';
+
+        userArr.forEach(user => {
+            let usrL = user.toLowerCase();
+    
+            if ( usrL.includes(searchValue) ) {
+                searchDisplay(user);
+            }
+        });
+
+        if ( !searchCot.hasChildNodes() ) {
+            searchDisplay('NO MATCHES AVAILABLE');
+        }
+    } else {
+        searchCot.style.display = 'none';
+    }
+});

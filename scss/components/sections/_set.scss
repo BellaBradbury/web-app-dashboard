@@ -106,7 +106,7 @@
         }
     }
 }
-select {
+#timezone-field {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -116,15 +116,15 @@ select {
     border-radius: 5px;
     height: 40px;
 }
-select::-ms-expand {
+#timezone-field::-ms-expand {
     display: none;
 }
 
-.select-wrap {
+.select-wrap-time {
     position: relative;
     width: 100%;
 }
-.select-wrap::after {
+.select-wrap-time::after {
     content: "▼";
     text-shadow: 0px 0px 15px rgba($color-darkest, 75%);
     color: $color-accent;

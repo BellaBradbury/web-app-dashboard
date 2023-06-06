@@ -933,6 +933,13 @@ nav a svg {
   border-radius: 5px;
 }
 
+#search-results {
+  display: none;
+  text-align: left;
+  font-size: medium;
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   #sect-set {
     border-left: solid 2px red;
@@ -1035,7 +1042,7 @@ nav a svg {
   border-radius: 5px;
 }
 
-select {
+#timezone-field {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1046,16 +1053,16 @@ select {
   height: 40px;
 }
 
-select::-ms-expand {
+#timezone-field::-ms-expand {
   display: none;
 }
 
-.select-wrap {
+.select-wrap-time {
   position: relative;
   width: 100%;
 }
 
-.select-wrap::after {
+.select-wrap-time::after {
   content: "▼";
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
   color: #786eb4;

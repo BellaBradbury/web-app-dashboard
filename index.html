@@ -240,6 +240,9 @@
                     <h3>MESSAGE USER</h3>
                     <div class="ume-main">
                         <input type="text" placeholder="Search for User" class="placeholder" id="user-search" name="user-search">
+                        <div id="search-results">
+                            <!-- AUTOCOMPLETE SEARCH RESULTS SHOWN HERE VIA APP.JS -->
+                        </div>
                         <textarea cols="30" rows="10" placeholder="Message for User" class="placeholder" id="user-message" name="user-message"></textarea>
                         <button>SEND</button>
                     </div>
@@ -264,8 +267,8 @@
                             </div>
                         </div>
 
-                        <div class="select-wrap">
-                            <select name="timezone" class="set-field">
+                        <div class="select-wrap-time">
+                            <select name="timezone" class="set-field" id="timezone-field">
                                 <option value="placeholder">Select Timezone</option>
                                 <optgroup label="AFRICA">
                                     <option value="CAT">Central Africa Time <small>(UTC +2)</small></option>
