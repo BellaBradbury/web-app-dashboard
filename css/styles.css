@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -501,10 +515,18 @@ header h1 strong {
 }
 .header-main button svg {
   width: 25px;
+  transition: width 0.5s;
+}
+.header-main button svg:hover {
+  animation: ring 3s ease-out forwards infinite;
+  width: 40px;
 }
 @media (min-width: 768px) {
   .header-main button svg {
     width: 30px;
+  }
+  .header-main button svg:hover {
+    width: 45px;
   }
 }
 .header-main button p {

@@ -30,9 +30,20 @@ header {
 
             svg {
                 width: 25px;
+
+                transition: width .5s;
+                
+                &:hover {
+                    animation: ring 3s ease-out forwards infinite;
+                    width: 40px;
+                }
     
                 @include mq(m) {
                     width: 30px;
+
+                    &:hover {
+                        width: 45px;
+                    }
                 }
             }
             p {
