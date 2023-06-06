@@ -158,6 +158,8 @@ searchBar.addEventListener('keyup', (e)=> {
             }
         });
 
+        console.log(!searchCot.hasChildNodes());
+        console.log(searchCot.childNodes)
         if ( !searchCot.hasChildNodes() ) {
             const noElement = document.createElement('h5');
             noElement.innerHTML = 'NO MATCHES AVAILABLE';
@@ -178,7 +180,9 @@ const errSearch = document.getElementById('err-search');
 const errArea = document.getElementById('err-area');
 
 msgForm.addEventListener('submit', (e)=> {
+    let validSearch = false;
     let errMsgSearch = '';
+    let validArea = false;
     let errMsgArea = '';
 
     if (!searchBar.value) {
@@ -200,6 +204,8 @@ msgForm.addEventListener('submit', (e)=> {
             e.preventDefault();
 
             errMsgSearch = 'Entered name does not match known members.';
+        } else {
+            validSearch = true;
         }
     }
 
@@ -207,7 +213,9 @@ msgForm.addEventListener('submit', (e)=> {
         e.preventDefault();
 
         errMsgArea = 'Please enter a message.';
-    }
+    } else {
+        validArea = true;
+    }   
 
     if (errMsgSearch !== undefined) {
         errSearch.innerHTML = errMsgSearch;
@@ -237,5 +245,11 @@ msgForm.addEventListener('submit', (e)=> {
         errArea.style.display = 'block';
         msgArea.style.border = 'solid 4px #a81d0a';
     }
-});
 
+    console.log('SEARCH: ', validSearch);
+    console.log('AREA: ', validArea);
+
+    if (validSearch && validArea) {
+        alert('MESSAGE SENT!');
+    } 
+});
