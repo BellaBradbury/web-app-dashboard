@@ -256,7 +256,7 @@
 
                 <section id="sect-set">
                     <h3>SETTINGS</h3>
-                    <form class="set-main">
+                    <div class="set-main">
                         <div class="set-field set-field-tog">
                             <p>Send Email Notifications</p>
                             <div class="set-field-tog-cot">
@@ -275,7 +275,7 @@
 
                         <div class="select-wrap-time">
                             <select name="timezone" class="set-field" id="timezone-field">
-                                <option value="placeholder">Select Timezone</option>
+                                <option value="placeholder" disabled>Select Timezone</option>
                                 <optgroup label="AFRICA">
                                     <option value="CAT">Central Africa Time <small>(UTC +2)</small></option>
                                     <option value="CET">Central European Time <small>(UTC +1)</small></option>
@@ -578,10 +578,10 @@
                         </div>
 
                         <div class="set-field">
-                            <button class="set-field-save">SAVE</button>
-                            <button class="set-field-cancel" type="reset">CANCEL</button>    
+                            <button class="set-field-save" action="index.html#sect-set">SAVE</button>
+                            <button class="set-field-cancel" type="reset" action="index.html#sect-set">CANCEL</button>    
                         </div>
-                    </form>
+                    </div>
                 </section>
             </div>
         </main>

@@ -253,3 +253,61 @@ msgForm.addEventListener('submit', (e)=> {
         alert('MESSAGE SENT!');
     } 
 });
+
+
+// SAVING SETTINGS
+const setCot = document.getElementsByClassName('set-main')[0];
+
+const emailSet = document.getElementById('email-notifications');
+const publicSet = document.getElementById('public-profile');
+const timeSet = document.getElementById('timezone-field');
+
+const btnSetSave = document.getElementsByClassName('set-field-save')[0];
+const btnSetCancel = document.getElementsByClassName('set-field-cancel')[0];
+
+if ( localStorage.getItem('email') ) {
+    let emailSave = JSON.parse( localStorage.getItem('email') );
+    emailSet.checked = emailSave;
+} else {
+    emailSet.checked = true;
+}
+
+if ( localStorage.getItem('public') ) {
+    let publicSave = JSON.parse( localStorage.getItem('public') );
+    publicSet.checked = publicSave;
+} else {
+    publicSet.checked = true;
+}
+
+if ( localStorage.getItem('time') ) {
+    let timeSave = localStorage.getItem('time');
+    let timeOptsHTML = document.getElementsByTagName('option');
+    let timeOptsArr = Array.from(timeOptsHTML);
+
+    timeOptsArr.forEach(opt => {
+        if (opt.value === timeSave) {
+            opt.selected = true;
+            return;
+        }
+    });
+} else {
+    let placeholder = document.getElementsByTagName('option')[0];
+
+    placeholder.selected = true;
+}
+
+btnSetSave.addEventListener('click', (e)=> {
+    localStorage.setItem('email', emailSet.checked);
+    localStorage.setItem('public', publicSet.checked);
+    localStorage.setItem('time', timeSet.value);
+
+    location.reload()
+});
+
+btnSetCancel.addEventListener('click', (e)=> {
+    localStorage.removeItem('email');
+    localStorage.removeItem('public');
+    localStorage.removeItem('time');
+
+    location.reload()
+});
