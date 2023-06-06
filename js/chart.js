@@ -11,8 +11,8 @@ const dataWeek = {
 };
 
 const colorP = '120, 110, 180'; // PURPLE - accent color of main page
-const colorS = '119, 186, 126'; // TEAL
-const colorT = '109, 191, 186'; // GREEN
+const colorS = '119, 186, 126'; // GREEN
+const colorT = '109, 191, 186'; // TEAL
 const colorQ = '168, 103, 168'; // PINK
 
 // TRAFFIC OVERVIEW CHART - HOURLY

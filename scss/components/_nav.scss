@@ -6,7 +6,9 @@ nav {
         @include flex($j:flex-start);
     }
 
-    svg {
-        width: 50px;
+    a {
+        svg {
+            width: 50px;
+        }
     }
 }

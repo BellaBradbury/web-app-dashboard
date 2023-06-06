@@ -22,13 +22,53 @@ header {
             width: 30%;
         }
 
-        svg {
-            width: 25px;
+        button {
+            background-color: $color-accent;
+            border: none;
 
-            @include mq(m) {
-                width: 30px;
+            @include flex($d:row, $j:flex-end);
+
+            svg {
+                width: 25px;
+    
+                @include mq(m) {
+                    width: 30px;
+                }
+            }
+            p {
+                align-self: self-start;
+                color: $color-alert;
+                font-size: xx-small;
+                display: none;
             }
         }
+    }
+    &notes {
+        @include flex();
+
+        display: none;
+        position: absolute;
+        right: 25px;
+        width: 280px;
+        background-color: $color-lightest;
+        z-index: 2;
+        border: $border-thick;
+
+        div {
+            @include flex($d: row, $j:space-between);
+
+            border-bottom: $border-thin;
+
+            button {
+                border: none;
+                color: $color-accent;
+                background-color: $color-lightest;
+                font-weight: $font-l;
+            }
+        }
+    }
+    &notes > :last-child {
+        border-bottom: none;
     }
 
     &usr {

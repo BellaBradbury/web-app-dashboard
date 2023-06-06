@@ -51,6 +51,7 @@
         "IRKST",
         "IRKT",
         "IRST",
+        "itms",
         "Kosrae",
         "KOST",
         "KRAST",
@@ -105,8 +106,6 @@
         "YAKT",
         "YAPT",
         "YEKST",
-        "YEKT",
-        // CLASS NAMES
-        
+        "YEKT"
     ]
 }

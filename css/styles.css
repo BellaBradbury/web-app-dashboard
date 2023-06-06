@@ -491,13 +491,58 @@ header h1 strong {
     width: 30%;
   }
 }
-.header-main svg {
+.header-main button {
+  background-color: #786eb4;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-main button svg {
   width: 25px;
 }
 @media (min-width: 768px) {
-  .header-main svg {
+  .header-main button svg {
     width: 30px;
   }
+}
+.header-main button p {
+  align-self: self-start;
+  color: #77ba7e;
+  font-size: xx-small;
+  display: none;
+}
+.header-notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: -webkit-fill-available;
+  display: none;
+  position: absolute;
+  right: 25px;
+  width: 280px;
+  background-color: white;
+  z-index: 2;
+  border: solid 4px red;
+}
+.header-notes div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  border-bottom: solid 2px red;
+}
+.header-notes div button {
+  border: none;
+  color: #786eb4;
+  background-color: white;
+  font-weight: 500;
+}
+.header-notes > :last-child {
+  border-bottom: none;
 }
 .header-usr {
   border-left: solid 2px red;
@@ -531,7 +576,7 @@ nav {
     align-items: center;
   }
 }
-nav svg {
+nav a svg {
   width: 50px;
 }
 
