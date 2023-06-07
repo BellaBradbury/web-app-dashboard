@@ -26,6 +26,8 @@
 
         @include mq(m) {
             width: 30%;
+            padding: 2%;
+            margin: 3% 0%;
         }
     }
     &stats {

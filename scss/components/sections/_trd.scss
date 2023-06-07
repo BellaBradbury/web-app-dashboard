@@ -10,8 +10,9 @@
     align-self: baseline;
 
     @include mq(m) {
-        width: 250px;
+        width: 300px;
         height: 200px;
+        margin-bottom: 12%;
     }
 
     @include mq(l) {

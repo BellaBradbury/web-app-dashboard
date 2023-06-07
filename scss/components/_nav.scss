@@ -11,5 +11,9 @@ nav {
         svg {
             width: 40px;
         }
+
+        @include mq(m) {
+            margin: 20% 0%;
+        }
     }
 }

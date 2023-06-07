@@ -12,8 +12,8 @@
     margin-right: 6%;
 
     @include mq(m) {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
 
     @include mq(l) {

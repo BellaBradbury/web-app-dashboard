@@ -18,6 +18,10 @@
     &field {
         margin: 5% 0%;
         @include flex($d:row, $j:space-between);
+
+        @include mq(m) {
+            margin: 0%;
+        }
         
         &-save {
             background-color: $color-accent;
@@ -25,6 +29,11 @@
             height: 40px;
             border: $border-thin;
             border-radius: 5px;
+
+            @include mq(m) {
+                height: 50px;
+                margin: 2% 0%;
+            }
         }
 
         &-tog {
@@ -98,6 +107,7 @@
 
             @include mq(m) {
                 width: 50%;
+                margin: 2% 0%;
             }
         }
 
@@ -107,6 +117,11 @@
             border: $border-thin;
             border-radius: 5px;
             height: 40px;
+
+            @include mq(m) {
+                height: 50px;
+                margin: 2% 0%;
+            }
         }
     }
 }
@@ -120,6 +135,10 @@
     border-radius: 5px;
     height: 40px;
     padding: 2%;
+
+    @include mq(m) {
+        height: 50px;
+    }
 }
 #timezone-field::-ms-expand {
     display: none;
@@ -138,4 +157,8 @@
     pointer-events: none;
     right: 3%;
     top: 35%;
+
+    @include mq(m) {
+        top: 40%;
+    }
 }

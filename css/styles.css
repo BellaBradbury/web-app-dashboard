@@ -488,6 +488,11 @@ header {
   align-items: center;
   width: -webkit-fill-available;
 }
+@media (min-width: 768px) {
+  header {
+    padding: 2%;
+  }
+}
 header h1 {
   color: white;
 }
@@ -580,6 +585,12 @@ header h1 strong {
   border: none;
   border-radius: 50%;
 }
+@media (min-width: 768px) {
+  .header-usr img {
+    width: 60px;
+    padding: 0% 3%;
+  }
+}
 .header-usr p {
   color: white;
   font-size: small;
@@ -603,6 +614,11 @@ nav {
 }
 nav a svg {
   width: 40px;
+}
+@media (min-width: 768px) {
+  nav a {
+    margin: 20% 0%;
+  }
 }
 
 #sect-til {
@@ -721,8 +737,9 @@ nav a svg {
 }
 @media (min-width: 768px) {
   .trd-chart {
-    width: 250px;
+    width: 300px;
     height: 200px;
+    margin-bottom: 12%;
   }
 }
 @media (min-width: 1024px) {
@@ -747,8 +764,8 @@ nav a svg {
 }
 @media (min-width: 768px) {
   .umo-chart {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
   }
 }
 @media (min-width: 1024px) {
@@ -790,6 +807,8 @@ nav a svg {
 @media (min-width: 768px) {
   .soc-card {
     width: 30%;
+    padding: 2%;
+    margin: 3% 0%;
   }
 }
 .soc-stats {
@@ -829,6 +848,8 @@ nav a svg {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    padding: 3% 0%;
+    margin: 0% 2%;
   }
 }
 .une-info-out {
@@ -852,6 +873,7 @@ nav a svg {
 @media (min-width: 768px) {
   .une-info-out img {
     width: 60px;
+    margin-right: 2%;
   }
 }
 .une-info-in {
@@ -905,6 +927,8 @@ nav a svg {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    padding: 3% 0%;
+    margin: 0% 2%;
   }
 }
 .act-card button {
@@ -941,6 +965,7 @@ nav a svg {
 @media (min-width: 768px) {
   .act-info-out img {
     width: 60px;
+    margin-right: 2%;
   }
 }
 .act-info-in {
@@ -987,6 +1012,11 @@ nav a svg {
   border-radius: 5px;
   margin-bottom: 5%;
   height: 40px;
+}
+@media (min-width: 768px) {
+  .ume-main button {
+    height: 50px;
+  }
 }
 .ume-main h5 {
   color: #a81d0a;
@@ -1044,12 +1074,23 @@ nav a svg {
   align-items: center;
   width: -webkit-fill-available;
 }
+@media (min-width: 768px) {
+  .set-field {
+    margin: 0%;
+  }
+}
 .set-field-save {
   background-color: #786eb4;
   width: 45%;
   height: 40px;
   border: solid 2px red;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .set-field-save {
+    height: 50px;
+    margin: 2% 0%;
+  }
 }
 .set-field-tog-cot input {
   -webkit-appearance: none;
@@ -1112,6 +1153,7 @@ nav a svg {
 @media (min-width: 768px) {
   .set-field-tog {
     width: 50%;
+    margin: 2% 0%;
   }
 }
 .set-field-cancel {
@@ -1120,6 +1162,12 @@ nav a svg {
   border: solid 2px red;
   border-radius: 5px;
   height: 40px;
+}
+@media (min-width: 768px) {
+  .set-field-cancel {
+    height: 50px;
+    margin: 2% 0%;
+  }
 }
 
 #timezone-field {
@@ -1132,6 +1180,11 @@ nav a svg {
   border-radius: 5px;
   height: 40px;
   padding: 2%;
+}
+@media (min-width: 768px) {
+  #timezone-field {
+    height: 50px;
+  }
 }
 
 #timezone-field::-ms-expand {
@@ -1152,6 +1205,11 @@ nav a svg {
   pointer-events: none;
   right: 3%;
   top: 35%;
+}
+@media (min-width: 768px) {
+  .select-wrap-time::after {
+    top: 40%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

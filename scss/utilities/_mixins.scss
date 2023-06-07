@@ -62,6 +62,8 @@
             flex-direction: row;
             justify-content: space-between;
             text-align: left;
+            padding: 3% 0%;
+            margin: 0% 2%;
         } 
         
         @content;
@@ -81,6 +83,7 @@
 
                 @include mq(m) {
                     width: 60px;
+                    margin-right: 2%;
                 }
             }
         }

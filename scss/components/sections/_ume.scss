@@ -23,6 +23,10 @@
             border-radius: 5px;
             margin-bottom: 5%;
             height: 40px;
+
+            @include mq(m) {
+                height: 50px;
+            }
         }
 
         h5 {

@@ -5,6 +5,10 @@ header {
 
     @include flex($d:row, $j:space-between); 
 
+    @include mq(m) {
+        padding: 2%;
+    }
+
     h1 {
         color: $color-lightest;
 
@@ -92,6 +96,11 @@ header {
             padding: 0% 3%;
         
             @include round;
+
+            @include mq(m) {
+                width: 60px;
+                padding: 0% 3%;
+            }
         }
 
         p {
