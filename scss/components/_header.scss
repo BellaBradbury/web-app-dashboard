@@ -69,6 +69,10 @@ header {
         z-index: 2;
         border: $border-thick;
 
+        @include mq(m) {
+            right: 125px;
+        }
+
         div {
             @include flex($d: row, $j:space-between);
 

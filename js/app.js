@@ -1,6 +1,7 @@
 // NOTIFICATIONS 
 const btnNotes = document.getElementById('btn-notifications');
 let notesCot = document.getElementsByClassName('header-notes')[0];
+console.log(notesCot)
 let notesArr = [
     'New message from Dale',
     'Dawn commented on your post',
@@ -62,12 +63,17 @@ btnNotes.addEventListener('click', (e) => {
             });
         });
 
-        window.addEventListener('click', (e)=> {
-            if (!notesCot.contains(e.target) && !btnNotes.contains(e.target)) {
-                notesCot.style.display = 'none';
-            }
-        });
     } else {
+        btnNotes.setAttribute('itms', 'hidden');
+        notesCot.style.display = 'none';
+    }
+});
+
+let dashboard = document.getElementById('dashboard');
+let navBar = document.getElementsByTagName('nav')[0];
+
+window.addEventListener('click', (e)=> {
+    if (dashboard.contains(e.target) || navBar.contains(e.target) ) {
         btnNotes.setAttribute('itms', 'hidden');
         notesCot.style.display = 'none';
     }
@@ -188,7 +194,8 @@ msgForm.addEventListener('submit', (e)=> {
     if (!searchBar.value) {
         e.preventDefault();
 
-        errMsgSearch = 'Please provide a recipient.'
+        errMsgSearch = 'Please provide a recipient.';
+        errSearch.style.marginTop = '2%';
     } else {
         let counter = 0;
 
@@ -204,6 +211,7 @@ msgForm.addEventListener('submit', (e)=> {
             e.preventDefault();
 
             errMsgSearch = 'Entered name does not match known members.';
+            errSearch.style.marginTop = '2%';
         } else {
             validSearch = true;
         }
@@ -213,8 +221,12 @@ msgForm.addEventListener('submit', (e)=> {
         e.preventDefault();
 
         errMsgArea = 'Please enter a message.';
+        msgArea.style.marginBottom = '0px';
+        errArea.style.marginTop = '2%';
+        errArea.style.marginBottom = '5%';
     } else {
         validArea = true;
+        msgArea.style.marginBottom = '5%';
     }   
 
     if (errMsgSearch !== undefined) {

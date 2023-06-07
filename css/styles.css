@@ -555,6 +555,11 @@ header h1 strong {
   z-index: 2;
   border: solid 4px red;
 }
+@media (min-width: 768px) {
+  .header-notes {
+    right: 125px;
+  }
+}
 .header-notes div {
   display: flex;
   flex-direction: row;
@@ -1033,17 +1038,33 @@ nav a svg {
   font-size: medium;
   width: 100%;
 }
+@media (min-width: 768px) {
+  #search-results {
+    font-size: medium;
+  }
+}
 #search-results h5 {
   color: #a81d0a;
   font-size: large;
   font-weight: 500;
   margin: 0;
+  margin-top: 3%;
 }
 #search-results button {
   background: none;
   color: black;
   border: none;
   text-align: left;
+  margin-bottom: 2%;
+  height: fit-content;
+}
+@media (min-width: 768px) {
+  #search-results button {
+    margin-bottom: 1%;
+  }
+}
+#search-results > button:first-of-type {
+  margin-top: 3%;
 }
 
 @media (min-width: 1024px) {
@@ -1221,12 +1242,7 @@ nav a svg {
   z-index: 1;
   pointer-events: none;
   right: 3%;
-  top: 35%;
-}
-@media (min-width: 768px) {
-  .select-wrap-time::after {
-    top: 40%;
-  }
+  top: 40%;
 }
 
 /*# sourceMappingURL=styles.css.map */
