@@ -6,7 +6,7 @@ const dataWeek = {
     labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
     datasets: [{
         data: [9000, 7000, 6500, 4000, 5210, 8600, 11000],
-        borderWidth: 1
+        borderWidth: 1.5
     }]
 };
 
@@ -24,13 +24,14 @@ let troChartHour = new Chart(troCotHour, {
         labels: ['00-15', '16-30', '31-45', '46-59'],
         datasets: [{
             data: [150, 689, 520, 230],
-            borderWidth: 1
+            borderWidth: 2
         }]
     },
     options: {
         backgroundColor: `rgba(${colorP}, .25)`,
         fill: true,
         tension: 0.5,
+        hoverBorderWidth: 20,
         // maintainAspectRatio: false,
         scales: scales,
         plugins: plugins
@@ -46,13 +47,14 @@ let troChartDay = new Chart(troCotDay, {
         labels: ['12-1', '2-3', '4-5', '6-7', '8-9', '10-11', '12-1', '2-3', '4-5', '6-7', '8-9', '10-11'],
         datasets: [{
             data: [600, 1250, 1000, 2000, 1500, 1750, 1250, 1900, 2250, 1500, 2500, 700],
-            borderWidth: 1
+            borderWidth: 2
         }]
     },
     options: {
         backgroundColor: `rgba(${colorT}, .25)`,
         fill: true,
         tension: 0.5,
+        hoverBorderWidth: 20,
         // maintainAspectRatio: false,
         scales: scales,
         plugins: plugins
@@ -69,6 +71,7 @@ let troChartWeek = new Chart(troCotWeek, {
         backgroundColor: `rgba(${colorQ}, .25)`,
         fill: true,
         tension: 0.5,
+        hoverBorderWidth: 20,
         // maintainAspectRatio: false,
         scales: scales,
         plugins: plugins
@@ -84,12 +87,13 @@ let troChartMonth = new Chart(troCotMonth, {
         labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
         datasets: [{
             data: [1500000, 1205300, 1102030, 930265, 946302, 986399, 1096325, 1365952, 1856320, 1456985, 1123567, 2015368],
-            borderWidth: 1
+            borderWidth: 2
         }]
     },
     options: {
         backgroundColor: `rgba(${colorS}, .25)`,
         fill: true,
+        hoverBorderWidth: 20,
         // maintainAspectRatio: false,
         tension: 0.5,
         scales: scales,
@@ -106,6 +110,7 @@ let trdChart = new Chart(trdCot, {
     options: {
         backgroundColor: `rgba(${colorP})`,
         fill: true,
+        hoverBorderRadius: 20,
         // maintainAspectRatio: false,
         scales: scales,
         plugins: plugins
@@ -132,6 +137,7 @@ let umoChart = new Chart(umoCot, {
         ],
         weight: 0,
         fill: true,
+        hoverOffset: 20,
         // maintainAspectRatio: false,
         scales: {
             y: {

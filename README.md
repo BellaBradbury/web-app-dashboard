@@ -20,7 +20,6 @@ Team Treehouse - Front End Web Development TechDegree - Project 7
 
 -TO DO-
 * FOCUS STATES
-* CHART ANIMATIONS
 
 -OPEN TAGS-
 < chart sizing issue
