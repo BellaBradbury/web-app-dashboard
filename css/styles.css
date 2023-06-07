@@ -1092,6 +1092,11 @@ nav a svg {
     margin: 2% 0%;
   }
 }
+@media (min-width: 1024px) {
+  .set-field-save {
+    margin-top: 6%;
+  }
+}
 .set-field-tog-cot input {
   -webkit-appearance: none;
   appearance: none;
@@ -1156,6 +1161,12 @@ nav a svg {
     margin: 2% 0%;
   }
 }
+@media (min-width: 1024px) {
+  .set-field-tog {
+    margin: 5% 0%;
+    width: 70%;
+  }
+}
 .set-field-cancel {
   background-color: gray;
   width: 45%;
@@ -1167,6 +1178,11 @@ nav a svg {
   .set-field-cancel {
     height: 50px;
     margin: 2% 0%;
+  }
+}
+@media (min-width: 1024px) {
+  .set-field-cancel {
+    margin-top: 6%;
   }
 }
 
@@ -1193,6 +1209,7 @@ nav a svg {
 
 .select-wrap-time {
   position: relative;
+  margin-top: 8%;
   width: 100%;
 }
 

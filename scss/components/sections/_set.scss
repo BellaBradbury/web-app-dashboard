@@ -34,6 +34,10 @@
                 height: 50px;
                 margin: 2% 0%;
             }
+
+            @include mq(l) {
+                margin-top: 6%;
+            }
         }
 
         &-tog {
@@ -109,6 +113,11 @@
                 width: 50%;
                 margin: 2% 0%;
             }
+
+            @include mq(l) {
+                margin: 5% 0%;
+                width: 70%;
+            } 
         }
 
         &-cancel {
@@ -121,6 +130,10 @@
             @include mq(m) {
                 height: 50px;
                 margin: 2% 0%;
+            }
+
+            @include mq(l) {
+                margin-top: 6%;
             }
         }
     }
@@ -146,6 +159,7 @@
 
 .select-wrap-time {
     position: relative;
+    margin-top: 8%;
     width: 100%;
 }
 .select-wrap-time::after {
