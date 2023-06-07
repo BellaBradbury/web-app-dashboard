@@ -541,6 +541,16 @@ header h1 strong {
   font-size: xx-small;
   display: none;
 }
+.header-main button:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
+}
+.header-main button:focus p {
+  color: white;
+}
 .header-notes {
   display: flex;
   flex-direction: column;
@@ -574,11 +584,18 @@ header h1 strong {
   background-color: white;
   font-weight: 500;
 }
+.header-notes div button:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
+}
 .header-notes > :last-child {
   border-bottom: none;
 }
 .header-usr {
-  border-left: solid 2px rgba(128, 128, 128, 0.25);
+  border-left: solid 1.5px gray;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -624,6 +641,14 @@ nav a svg {
   nav a {
     margin: 20% 0%;
   }
+}
+nav a:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
+  padding: 3%;
 }
 
 #sect-til {
@@ -675,6 +700,13 @@ nav a svg {
   background-color: #786eb4;
   border: none;
 }
+#sect-alr button:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
+}
 
 #sect-tro {
   border-top: none;
@@ -709,6 +741,13 @@ nav a svg {
   color: black;
   background-color: white;
   border: none;
+}
+.tro-nav button:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
 }
 .tro-charts {
   position: relative;
@@ -949,6 +988,13 @@ nav a svg {
     display: block;
   }
 }
+.act-card button:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
+}
 .act-info-out {
   display: flex;
   flex-direction: column;
@@ -1007,6 +1053,12 @@ nav a svg {
   border-radius: 5px;
   padding: 2%;
 }
+.ume-main input:focus, .ume-main textarea:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 5px;
+  background-color: rgba(119, 186, 126, 0.25);
+}
 .ume-main textarea {
   margin: 5% 0%;
 }
@@ -1022,6 +1074,13 @@ nav a svg {
   .ume-main button {
     height: 50px;
   }
+}
+.ume-main button:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
 }
 .ume-main h5 {
   color: #a81d0a;
@@ -1062,6 +1121,13 @@ nav a svg {
   #search-results button {
     margin-bottom: 1%;
   }
+}
+#search-results button:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
 }
 #search-results > button:first-of-type {
   margin-top: 3%;
@@ -1118,6 +1184,13 @@ nav a svg {
     margin-top: 6%;
   }
 }
+.set-field-save:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
+}
 .set-field-tog-cot input {
   -webkit-appearance: none;
   appearance: none;
@@ -1129,6 +1202,13 @@ nav a svg {
   border-radius: 50px;
   transition: background-color 0.3s;
   outline: none;
+}
+.set-field-tog-cot input:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
 }
 .set-field-tog-cot input::after {
   content: "";
@@ -1145,6 +1225,13 @@ nav a svg {
 }
 .set-field-tog-cot input:checked {
   background-color: #786eb4;
+}
+.set-field-tog-cot input:checked:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
 }
 .set-field-tog-cot input:checked::after {
   left: 80%;
@@ -1206,6 +1293,13 @@ nav a svg {
     margin-top: 6%;
   }
 }
+.set-field-cancel:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 50px;
+  background-color: rgba(119, 186, 126, 0.75);
+  color: white;
+}
 
 #timezone-field {
   -webkit-appearance: none;
@@ -1222,6 +1316,12 @@ nav a svg {
   #timezone-field {
     height: 50px;
   }
+}
+#timezone-field:focus {
+  outline: none;
+  border: solid 2px #77ba7e;
+  border-radius: 5px;
+  background-color: rgba(119, 186, 126, 0.15);
 }
 
 #timezone-field::-ms-expand {

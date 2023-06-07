@@ -13,6 +13,13 @@
     border: none;
     border-radius: 50%;
 }
+@mixin focus {
+    outline: none;
+    border: solid 2px $color-alert;
+    border-radius: 50px;
+    background-color: $color-focus;
+    color: $color-lightest;
+}
 
 
 // ---------- ANIMATION ---------- //

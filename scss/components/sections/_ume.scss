@@ -12,6 +12,13 @@
             background-color: $color-light;
             border-radius: 5px;
             padding: 2%;
+
+            &:focus {
+                outline: none;
+                border: solid 2px $color-alert;
+                border-radius: 5px;
+                background-color: rgba($color-alert, .25);
+            }
         }
         textarea {
             margin: 5% 0%;
@@ -25,7 +32,11 @@
             height: 40px;
 
             @include mq(m) {
-                height: 50px;;
+                height: 50px;
+            }
+
+            &:focus {
+                @include focus();
             }
         }
 
@@ -68,6 +79,10 @@
 
         @include mq(m) {
             margin-bottom: 1%;
+        }
+
+        &:focus {
+            @include focus();
         }
     }
     & > button:first-of-type {

@@ -38,6 +38,10 @@
             @include mq(l) {
                 margin-top: 6%;
             }
+
+            &:focus {
+                @include focus();
+            }
         }
 
         &-tog {
@@ -57,6 +61,10 @@
 
                     transition: background-color .3s;
                     outline: none;
+
+                    &:focus {
+                        @include focus();
+                    }
                 }
                 input::after {
                     content: '';
@@ -73,6 +81,10 @@
                 }
                 input:checked {
                     background-color: $color-accent;
+
+                    &:focus {
+                        @include focus();
+                    }
                 }
                 input:checked::after {
                     left: 80%;
@@ -135,6 +147,10 @@
             @include mq(l) {
                 margin-top: 6%;
             }
+
+            &:focus {
+                @include focus();
+            }
         }
     }
 }
@@ -151,6 +167,13 @@
 
     @include mq(m) {
         height: 50px;
+    }
+
+    &:focus {
+        outline: none;
+        border: solid 2px $color-alert;
+        border-radius: 5px;
+        background-color: rgba($color-alert, .15);
     }
 }
 #timezone-field::-ms-expand {

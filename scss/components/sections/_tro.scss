@@ -23,6 +23,10 @@
             color: $color-darkest;
             background-color: $color-lightest;
             border: none;
+
+            &:focus {
+                @include focus();
+            }
         }
     }
     &charts {

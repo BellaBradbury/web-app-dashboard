@@ -15,5 +15,10 @@ nav {
         @include mq(m) {
             margin: 20% 0%;
         }
+
+        &:focus {
+            @include focus();
+            padding: 3%;
+        }
     }
 }

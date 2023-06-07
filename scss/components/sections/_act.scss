@@ -18,6 +18,10 @@
             color: $color-accent;
             font-weight: $font-m;
             font-size: xx-large;
+
+            &:focus {
+                @include focus();
+            }
         }
     }
 }

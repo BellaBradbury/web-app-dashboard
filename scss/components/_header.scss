@@ -56,6 +56,14 @@ header {
                 font-size: xx-small;
                 display: none;
             }
+
+            &:focus {
+                @include focus();
+
+                p {
+                    color: $color-lightest;
+                }
+            }
         }
     }
     &notes {
@@ -84,6 +92,9 @@ header {
                 background-color: $color-lightest;
                 font-weight: $font-l;
             }
+            button:focus {
+                @include focus();
+            }
         }
     }
     &notes > :last-child {
@@ -91,7 +102,7 @@ header {
     }
 
     &usr {
-        border-left: $border-thin;
+        border-left: solid 1.5px $color-medium;
 
         @include flex($d:row, $j:flex-end);
 
