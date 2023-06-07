@@ -262,6 +262,9 @@ const emailSet = document.getElementById('email-notifications');
 const publicSet = document.getElementById('public-profile');
 const timeSet = document.getElementById('timezone-field');
 
+let timeOptsHTML = document.getElementsByTagName('option');
+let timeOptsArr = Array.from(timeOptsHTML);
+
 const btnSetSave = document.getElementsByClassName('set-field-save')[0];
 const btnSetCancel = document.getElementsByClassName('set-field-cancel')[0];
 
@@ -281,8 +284,6 @@ if ( localStorage.getItem('public') ) {
 
 if ( localStorage.getItem('time') ) {
     let timeSave = localStorage.getItem('time');
-    let timeOptsHTML = document.getElementsByTagName('option');
-    let timeOptsArr = Array.from(timeOptsHTML);
 
     timeOptsArr.forEach(opt => {
         if (opt.value === timeSave) {
@@ -310,4 +311,42 @@ btnSetCancel.addEventListener('click', (e)=> {
     localStorage.removeItem('time');
 
     location.reload()
+});
+
+// SELECT MENU STYLING 
+timeSet.addEventListener('change', (e)=> {
+    let value = timeSet.value;
+    let text = timeSet.options[timeSet.selectedIndex].text;
+
+    if (value !== 'placeholder') {
+        timeSet.style.color = 'black';
+    }
+
+    console.log(text.length);
+    if (text.length > 50) {
+        timeSet.style.fontSize = '.75rem';
+    } else if (text.length > 30) {
+        console.log('REACHED')
+        timeSet.style.fontSize = 'small';
+    } else {
+        timeSet.style.fontSize = '100%';
+    }
+});
+window.addEventListener('load', (e)=> {
+    let value = timeSet.value;
+    let text = timeSet.options[timeSet.selectedIndex].text;
+
+    if (value !== 'placeholder') {
+        timeSet.style.color = 'black';
+    }
+
+    console.log(text.length);
+    if (text.length > 50) {
+        timeSet.style.fontSize = '.75rem';
+    } else if (text.length > 30) {
+        console.log('REACHED')
+        timeSet.style.fontSize = 'small';
+    } else {
+        timeSet.style.fontSize = '100%';
+    }
 });
