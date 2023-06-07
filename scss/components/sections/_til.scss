@@ -5,6 +5,7 @@
 
     h2 {
         width: max-content;
+        padding: 0% 5%;
 
         @include mq(m) {
             max-width: 50%;

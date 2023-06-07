@@ -1,5 +1,6 @@
 // // ---------- NAV STYLES ---------- //
 nav {
+    padding: 2% 5%;
     @include flex($d:row);
 
     @include mq(m) {
@@ -8,7 +9,7 @@ nav {
 
     a {
         svg {
-            width: 50px;
+            width: 40px;
         }
     }
 }

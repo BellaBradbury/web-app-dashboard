@@ -1,12 +1,9 @@
 // ---------- MESSAGE USER STYLES ---------- //
 .ume- {
     &main {
+        margin: 0% 5%;
         @include flex();
-        width: 100vw;
-
-        @include mq(m) {
-            width: 100%;
-        }
+        width: 90%;
 
         input, textarea {
             width: 100%;
@@ -14,12 +11,18 @@
             box-sizing: border-box;
             background-color: $color-light;
             border-radius: 5px;
+            padding: 2%;
+        }
+        textarea {
+            margin: 5% 0%;
         }
         button {
             width: 100%;
             border: $border-thin;
             background-color: $color-accent;
             border-radius: 5px;
+            margin-bottom: 5%;
+            height: 40px;
         }
 
         h5 {

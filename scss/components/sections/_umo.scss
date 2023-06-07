@@ -6,9 +6,10 @@
 }
 .umo-chart {
     position: relative;
-    width: 300px;
-    height: 150px;
-    margin: auto;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: 6%;
 
     @include mq(m) {
         width: 250px;

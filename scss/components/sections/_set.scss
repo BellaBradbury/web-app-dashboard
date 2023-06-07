@@ -9,17 +9,20 @@
         @include flex($a:normal);
 
         width: 100vw;
+        padding: 0% 3%;
 
         @include mq(m) {
             width: 100%;
         }
     }
     &field {
+        margin: 5% 0%;
         @include flex($d:row, $j:space-between);
         
         &-save {
             background-color: $color-accent;
-            width: 40%;
+            width: 45%;
+            height: 40px;
             border: $border-thin;
             border-radius: 5px;
         }
@@ -100,9 +103,10 @@
 
         &-cancel {
             background-color: $color-medium;
-            width: 40%;
+            width: 45%;
             border: $border-thin;
             border-radius: 5px;
+            height: 40px;
         }
     }
 }
@@ -115,6 +119,7 @@
     border: $border-thin;
     border-radius: 5px;
     height: 40px;
+    padding: 2%;
 }
 #timezone-field::-ms-expand {
     display: none;

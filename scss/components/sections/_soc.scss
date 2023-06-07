@@ -14,9 +14,11 @@
         border: $border-thin;
         background-color: $color-light;
         border-radius: 5px;
+        padding: 3%;
+        margin: 4% 8%;
 
         svg {
-            width: 50px;
+            width: 70px;
             background-color: $color-accent;
             border-radius: 50px;
             padding: 5%;

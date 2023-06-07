@@ -1,7 +1,7 @@
 // // ---------- HEADER STYLES ---------- //
 header {
     background-color: $color-accent;
-    padding: 2%;
+    padding: 5% 3%;
 
     @include flex($d:row, $j:space-between); 
 
@@ -29,20 +29,20 @@ header {
             @include flex($d:row, $j:flex-end);
 
             svg {
-                width: 25px;
+                width: 20px;
 
                 transition: width .5s;
                 
                 &:hover {
                     animation: ring 3s ease-out forwards infinite;
-                    width: 40px;
+                    width: 30px;
                 }
     
                 @include mq(m) {
-                    width: 30px;
+                    width: 25px;
 
                     &:hover {
-                        width: 45px;
+                        width: 35px;
                     }
                 }
             }
@@ -88,7 +88,8 @@ header {
         @include flex($d:row, $j:flex-end);
 
         img {
-            width: 50px;
+            width: 45px;
+            padding: 0% 3%;
         
             @include round;
         }

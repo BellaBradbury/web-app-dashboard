@@ -330,7 +330,7 @@ main {
   background-color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 30fr;
+  grid-template-rows: 1fr 40fr;
   grid-template-areas: "nav" "dashboard";
 }
 @media (min-width: 768px) {
@@ -447,6 +447,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: large;
+  padding: 0% 3%;
   margin-right: auto;
 }
 
@@ -480,7 +481,7 @@ p {
 
 header {
   background-color: #786eb4;
-  padding: 2%;
+  padding: 5% 3%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -514,19 +515,19 @@ header h1 strong {
   align-items: center;
 }
 .header-main button svg {
-  width: 25px;
+  width: 20px;
   transition: width 0.5s;
 }
 .header-main button svg:hover {
   animation: ring 3s ease-out forwards infinite;
-  width: 40px;
+  width: 30px;
 }
 @media (min-width: 768px) {
   .header-main button svg {
-    width: 30px;
+    width: 25px;
   }
   .header-main button svg:hover {
-    width: 45px;
+    width: 35px;
   }
 }
 .header-main button p {
@@ -574,7 +575,8 @@ header h1 strong {
   align-items: center;
 }
 .header-usr img {
-  width: 50px;
+  width: 45px;
+  padding: 0% 3%;
   border: none;
   border-radius: 50%;
 }
@@ -584,6 +586,7 @@ header h1 strong {
 }
 
 nav {
+  padding: 2% 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -599,7 +602,7 @@ nav {
   }
 }
 nav a svg {
-  width: 50px;
+  width: 40px;
 }
 
 #sect-til {
@@ -612,6 +615,7 @@ nav a svg {
 }
 #sect-til h2 {
   width: max-content;
+  padding: 0% 5%;
 }
 @media (min-width: 768px) {
   #sect-til h2 {
@@ -630,8 +634,9 @@ nav a svg {
 
 #sect-alr {
   background-color: #786eb4;
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 2%;
+  margin: 5% 3%;
   border: none;
   display: flex;
   flex-direction: row;
@@ -735,9 +740,10 @@ nav a svg {
 
 .umo-chart {
   position: relative;
-  width: 300px;
-  height: 150px;
-  margin: auto;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: 6%;
 }
 @media (min-width: 768px) {
   .umo-chart {
@@ -772,9 +778,11 @@ nav a svg {
   border: solid 2px red;
   background-color: #e6e6e6;
   border-radius: 5px;
+  padding: 3%;
+  margin: 4% 8%;
 }
 .soc-card svg {
-  width: 50px;
+  width: 70px;
   background-color: #786eb4;
   border-radius: 50px;
   padding: 5%;
@@ -814,6 +822,7 @@ nav a svg {
   width: -webkit-fill-available;
   text-align: center;
   border-bottom: solid 2px red;
+  padding: 6% 0%;
 }
 @media (min-width: 768px) {
   .une-card {
@@ -889,6 +898,7 @@ nav a svg {
   width: -webkit-fill-available;
   text-align: center;
   border-bottom: solid 2px red;
+  padding: 6% 0%;
 }
 @media (min-width: 768px) {
   .act-card {
@@ -951,17 +961,13 @@ nav a svg {
 }
 
 .ume-main {
+  margin: 0% 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: -webkit-fill-available;
-  width: 100vw;
-}
-@media (min-width: 768px) {
-  .ume-main {
-    width: 100%;
-  }
+  width: 90%;
 }
 .ume-main input, .ume-main textarea {
   width: 100%;
@@ -969,12 +975,18 @@ nav a svg {
   box-sizing: border-box;
   background-color: #e6e6e6;
   border-radius: 5px;
+  padding: 2%;
+}
+.ume-main textarea {
+  margin: 5% 0%;
 }
 .ume-main button {
   width: 100%;
   border: solid 2px red;
   background-color: #786eb4;
   border-radius: 5px;
+  margin-bottom: 5%;
+  height: 40px;
 }
 .ume-main h5 {
   color: #a81d0a;
@@ -1017,6 +1029,7 @@ nav a svg {
   align-items: normal;
   width: -webkit-fill-available;
   width: 100vw;
+  padding: 0% 3%;
 }
 @media (min-width: 768px) {
   .set-main {
@@ -1024,6 +1037,7 @@ nav a svg {
   }
 }
 .set-field {
+  margin: 5% 0%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1032,7 +1046,8 @@ nav a svg {
 }
 .set-field-save {
   background-color: #786eb4;
-  width: 40%;
+  width: 45%;
+  height: 40px;
   border: solid 2px red;
   border-radius: 5px;
 }
@@ -1101,9 +1116,10 @@ nav a svg {
 }
 .set-field-cancel {
   background-color: gray;
-  width: 40%;
+  width: 45%;
   border: solid 2px red;
   border-radius: 5px;
+  height: 40px;
 }
 
 #timezone-field {
@@ -1115,6 +1131,7 @@ nav a svg {
   border: solid 2px red;
   border-radius: 5px;
   height: 40px;
+  padding: 2%;
 }
 
 #timezone-field::-ms-expand {

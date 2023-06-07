@@ -340,11 +340,9 @@ window.addEventListener('load', (e)=> {
         timeSet.style.color = 'black';
     }
 
-    console.log(text.length);
     if (text.length > 50) {
-        timeSet.style.fontSize = '.75rem';
+        timeSet.style.fontSize = '.68rem';
     } else if (text.length > 30) {
-        console.log('REACHED')
         timeSet.style.fontSize = 'small';
     } else {
         timeSet.style.fontSize = '100%';
