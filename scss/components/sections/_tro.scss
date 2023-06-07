@@ -27,8 +27,19 @@
     }
     &charts {
         position: relative;
-        height: 100%;
-        width: 100%;
+        width: 300px;
+        height: 150px;
+        margin: auto;
+
+        @include mq(m) {
+            width: 650px;
+            height: 325px;
+        }
+
+        @include mq(l) {
+            width: 900px;
+            height: 400px;
+        }
     }
 }
 

@@ -1,6 +1,21 @@
 // ---------- TRAFFIC DAILY SECT ---------- //
+#sect-trd {
+    display: inherit;
+}
 .trd-chart {
     position: relative;
-    height: 100%;
-    width: 100%;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    align-self: baseline;
+
+    @include mq(m) {
+        width: 250px;
+        height: 200px;
+    }
+
+    @include mq(l) {
+        width: 350px;
+        height: 275px;
+    }
 }

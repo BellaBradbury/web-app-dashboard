@@ -357,7 +357,7 @@ nav {
   #dashboard {
     grid-template-areas: "til til" "alr alr" "tro tro" "trd umo" "soc soc" "une une" "act act" "ume ume" "set set";
     grid-template-rows: repeat(9, minmax(min-content, max-content));
-    grid-template-columns: repeat(2, minmax(1fr, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
@@ -686,14 +686,45 @@ nav a svg {
 }
 .tro-charts {
   position: relative;
-  height: 100%;
-  width: 100%;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .tro-charts {
+    width: 650px;
+    height: 325px;
+  }
+}
+@media (min-width: 1024px) {
+  .tro-charts {
+    width: 900px;
+    height: 400px;
+  }
+}
+
+#sect-trd {
+  display: inherit;
 }
 
 .trd-chart {
   position: relative;
-  height: 100%;
-  width: 100%;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  align-self: baseline;
+}
+@media (min-width: 768px) {
+  .trd-chart {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .trd-chart {
+    width: 350px;
+    height: 275px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -704,8 +735,21 @@ nav a svg {
 
 .umo-chart {
   position: relative;
-  height: 100%;
-  width: 100%;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .umo-chart {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .umo-chart {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 .soc-main {

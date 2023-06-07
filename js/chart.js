@@ -32,7 +32,7 @@ let troChartHour = new Chart(troCotHour, {
         fill: true,
         tension: 0.5,
         hoverBorderWidth: 20,
-        // maintainAspectRatio: false,
+        maintainAspectRatio: false,
         scales: scales,
         plugins: plugins
     }
@@ -55,7 +55,7 @@ let troChartDay = new Chart(troCotDay, {
         fill: true,
         tension: 0.5,
         hoverBorderWidth: 20,
-        // maintainAspectRatio: false,
+        maintainAspectRatio: false,
         scales: scales,
         plugins: plugins
     }
@@ -72,7 +72,7 @@ let troChartWeek = new Chart(troCotWeek, {
         fill: true,
         tension: 0.5,
         hoverBorderWidth: 20,
-        // maintainAspectRatio: false,
+        maintainAspectRatio: false,
         scales: scales,
         plugins: plugins
     }
@@ -94,7 +94,7 @@ let troChartMonth = new Chart(troCotMonth, {
         backgroundColor: `rgba(${colorS}, .25)`,
         fill: true,
         hoverBorderWidth: 20,
-        // maintainAspectRatio: false,
+        maintainAspectRatio: false,
         tension: 0.5,
         scales: scales,
         plugins: plugins
@@ -111,7 +111,7 @@ let trdChart = new Chart(trdCot, {
         backgroundColor: `rgba(${colorP})`,
         fill: true,
         hoverBorderRadius: 20,
-        // maintainAspectRatio: false,
+        maintainAspectRatio: false,
         scales: scales,
         plugins: plugins
     }

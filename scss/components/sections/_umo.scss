@@ -6,6 +6,17 @@
 }
 .umo-chart {
     position: relative;
-    height: 100%;
-    width: 100%;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+
+    @include mq(m) {
+        width: 250px;
+        height: 250px;
+    }
+
+    @include mq(l) {
+        width: 350px;
+        height: 350px;
+    }
 }
