@@ -2,7 +2,7 @@
 
 Team Treehouse - Front End Web Development TechDegree - Project 7
 
-  - Submitted 00/00/23 ***IN PROGRESS***
+  - Submitted 06/07/23 ***EXCEEDS EXPECTATIONS***
 
 -SKILLS USED-
 * HTML
